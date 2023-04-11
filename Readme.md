@@ -1,6 +1,6 @@
-# Личный проект «{{projectTitle}}»
+# Личный проект «Gllacy»
 
-* Студент: [{{userName}}]({{userProfile}}).
+* Студент: [Илья Жилин](https://htmlacademy.ru/profile/id535607).
 * Наставник: `Неизвестно`.
 
 ---
@@ -18,7 +18,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`
 
 #### 2. Создайте форк
 
-[Откройте мастер-репозиторий]({{homepage}}) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
+[Откройте мастер-репозиторий](https://github.com/wrgraff/535607-gllacy-36/) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
 
 <img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29037742-a62a72a0-7bad-11e7-9f36-4db8e9329498.jpg">
 

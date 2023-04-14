@@ -1,7 +1,7 @@
 # Личный проект «Gllacy»
 
 * Студент: [Илья Жилин](https://htmlacademy.ru/profile/id535607).
-* Наставник: `Неизвестно`.
+* Наставник: [Артур Трифонов](https://htmlacademy.ru/profile/wrgraff).
 
 ---
 

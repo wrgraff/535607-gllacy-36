@@ -2,208 +2,229 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <title>HTML Academy: Магазин Глейси - Главная</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
-  <!-- ==== HEADER START ==== -->
-  <header class="page__header header">
-    <!-- ==== LOGO ==== -->
+  <header class="page__header">
     <a class="logo">
       <img class="logo__img" src="img/logo-gllacy.svg" width="137" height="56" alt="Логотип магазина Глейси">
     </a>
 
-    <!-- ==== MENU ==== -->
-    <nav class="main-nav">
-      <ul class="main-nav__list">
+    <nav class="menu">
+      <ul class="menu__list main-nav">
         <li class="main-nav__item main-nav__item--has-dropdown">
-          <!-- возможно, модификатор лучше повесить на ссылку -->
           <a class="main-nav__link" href="catalog.html">Каталог</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="/delivery">Доставка и оплата</a>
+          <a class="main-nav__link" href="#">Доставка и оплата</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="/about">О компании</a>
+          <a class="main-nav__link" href="#">О компании</a>
         </li>
       </ul>
 
-      <ul class="main-nav--list">
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--bold" href="tel:+78005558628">+7 800 555-86-28</a>
+      <a class="menu__tel" href="tel:+78005558628">+7 800 555-86-28</a>
+
+      <ul class="menu__list user-menu">
+        <li class="user-menu__item">
+          <a class="user-menu__link" href="#">Поиск</a>
         </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--filled" href="#">Поиск</a>
+        <li class="user-menu__item">
+          <a class="user-menu__link" href="#">Авторизация</a>
         </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--filled" href="#">Авторизация</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--filled" href="#">Корзина</a>
+        <li class="user-menu__item">
+          <a class="user-menu__link" href="#">Корзина</a>
         </li>
       </ul>
     </nav>
   </header>
-  <!-- ==== HEADER END ==== -->
 
   <main class="page__content">
-    <!-- ==== CAROUSEL START ==== -->
+    <h1 class="sr-only">HTML Academy: Магазин Глейси</h1>
+
     <section class="carousel">
-      <h2 class="sr-only">Карусель</h2>
-      <!-- секция с популярными товарами есть, подарки тоже есть. Может специальные предложения, или можно сделать просто div без заголовка -->
+      <h2 class="sr-only">Попробуйте все новинки</h2>
       <ul class="carousel__list">
         <li class="carousel__item">
-          <h3 class="carousel__title">Нежный пломбир с клубничным джемом</h3>
-          <p class="carousel__text">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это
-            идеальный десерт для всей семьи.</p>
-          <a class="carousel__btn" href="#">Заказать</a>
+          <h3 class="title title--xl carousel__title">
+            Нежный пломбир с клубничным джемом
+          </h3>
+          <p class="carousel__text">
+            Натуральное мороженое из свежих сливок и молока с вкуснейшим
+            клубничным джемом – это идеальный десерт для всей семьи.
+          </p>
+          <a class="btn btn--basic carousel__btn" href="#">Заказать</a>
         </li>
+
         <li class="carousel__item">
-          <h3 class="carousel__title">Сливочное мороженое со вкусом банана</h3>
-          <p class="carousel__text">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже
-            в самый жаркий летний день.</p>
-          <a class="carousel__btn" href="#">Заказать</a>
+          <h3 class="title title--xl carousel__title">
+            Сливочное мороженое со вкусом банана
+          </h3>
+          <p class="carousel__text">
+            Сливочное мороженое с ярким банановым вкусом подарит вам свежесть
+            и наслаждение даже в самый жаркий летний день.
+          </p>
+          <a class="btn btn--basic carousel__btn" href="#">Заказать</a>
         </li>
+
         <li class="carousel__item">
-          <h3 class="carousel__title">Карамельный пломбир с маршмеллоу</h3>
-          <p class="carousel__text">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца
-            сладкоежек всех возрастов.</p>
-          <a class="carousel__btn" href="#">Заказать</a>
+          <h3 class="title title--xl carousel__title">
+            Карамельный пломбир с маршмеллоу
+          </h3>
+          <p class="carousel__text">
+            Необычный сладкий десерт с карамельным топпингом и кусочками
+            зефира завоюет сердца сладкоежек всех возрастов.
+          </p>
+          <a class="btn btn--basic carousel__btn" href="#">Заказать</a>
         </li>
       </ul>
     </section>
-    <!-- === CAROUSEL END ==== -->
 
-    <!-- ==== POPULAR START === -->
-    <section class="popular">
-      <h2 class="page__title popular__title">Попробуйте самые популярные вкусы нашего мороженого</h2>
-      <ul class="popular__list">
-        <li class="product">
-          <h3 class="product__title">Малинка</h3>
-          <p class="product__text">Сливочное мороженое с малиновым джемом</p>
-          <p class="product__price">310 ₽/кг</p>
-          <button class="product__btn" type="button">
-            <span class="sr-only">Добавить в корзину</span>
-          </button>
-        </li>
-
-        <li class="product">
-          <h3 class="product__title">Фисташка</h3>
-          <p class="product__text">Фисташковый пломбир с кусочками шоколада</p>
-          <p class="product__price">340 ₽/кг</p>
-          <button class="product__btn" type="button">
-            <span class="sr-only">Добавить в корзину</span>
-          </button>
-        </li>
-
-        <li class="product">
-          <h3 class="product__title">Черника</h3>
-          <p class="product__text">Крем-брюле с черничным джемом</p>
-          <p class="product__price">330 ₽/кг</p>
-          <button class="product__btn" type="button">
-            <span class="sr-only">Добавить в корзину</span>
-          </button>
-        </li>
-
-        <li class="product">
-          <h3 class="product__title">Бабл-гам</h3>
-          <p class="product__text">Ванильный пломбир со сладкой посыпкой</p>
-          <p class="product__price">320 ₽/кг</p>
-          <button class="product__btn" type="button">
-            <span class="sr-only">Добавить в корзину</span>
-          </button>
-        </li>
-      </ul>
-    </section>
-    <!-- ==== POPULAR END === -->
-
-    <!-- ==== GIFTS START ==== -->
     <section class="gifts">
-      <h2 class="page__title gifts__title">Заказывайте мороженое и получайте подарки!</h2>
+      <h2 class="title title--lg gifts__title">
+        Заказывайте мороженое и получайте подарки!
+      </h2>
       <ul class="gifts__list">
         <li class="gifts__item">
-          <!-- вместо .gifts__item можно использовать .gift -->
-          <h3 class="gifts__subtitle">Малинка даром!</h3>
-          <p class="gifts__text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового
-            варенья бесплатно.</p>
-          <a class="gifts__btn" href="#">Хочу подарок</a>
+          <h3 class="title title--md gifts__subtitle">Малинка даром!</h3>
+          <p class="gifts__text">
+            При покупке 2 кг любого фруктового мороженого добавим в ваш заказ
+            банку малинового варенья бесплатно.
+          </p>
+          <a class="btn btn--basic gifts__btn" href="#">Хочу подарок</a>
         </li>
+
         <li class="gifts__item">
-          <h3 class="gifts__subtitle">Маршмеллоу даром!</h3>
-          <p class="gifts__text">При покупке 2 кг пломбира добавимв ваш заказ упаковку нежных зефирок совершенно
-            бесплатно.</p>
-          <a class="gifts__btn" href="#">Хочу подарок</a>
+          <h3 class="title title--md gifts__subtitle">Маршмеллоу даром!</h3>
+          <p class="gifts__text">
+            При покупке 2 кг пломбира добавимв ваш заказ упаковку нежных
+            зефирок совершенно бесплатно.
+          </p>
+          <a class="btn btn--basic gifts__btn" href="#">Хочу подарок</a>
         </li>
       </ul>
     </section>
-    <!-- ==== GIFTS END ==== -->
 
-    <!-- ==== ADVANTAGES START ==== -->
+    <section class="popular">
+      <h2 class="title title--lg popular__title">
+        Попробуйте самые популярные вкусы нашего мороженого
+      </h2>
+      <ul class="popular__list">
+        <li class="product">
+          <h3 class="title title--md product__title">Малинка</h3>
+          <a class="product__link" href="#">Сливочное мороженое с малиновым джемом</a>
+          <p class="product__price">310 ₽/кг</p>
+          <a class="product__cart" href="#">
+            <span class="sr-only">Добавить в корзину</span>
+          </a>
+        </li>
+
+        <li class="product">
+          <h3 class="title title--md product__title">Фисташка</h3>
+          <a class="product__link" href="#">
+            Фисташковый пломбир с кусочками шоколада
+          </a>
+          <p class="product__price">340 ₽/кг</p>
+          <a class="product__cart" href="#">
+            <span class="sr-only">Добавить в корзину</span>
+          </a>
+        </li>
+
+        <li class="product">
+          <h3 class="title title--md product__title">Черника</h3>
+          <a class="product__link" href="#">Крем-брюле с черничным джемом</a>
+          <p class="product__price">330 ₽/кг</p>
+          <a class="product__cart" href="#">
+            <span class="sr-only">Добавить в корзину</span>
+          </a>
+        </li>
+
+        <li class="product">
+          <h3 class="title title--md product__title">Бабл-гам</h3>
+          <a class="product__link" href="#">Ванильный пломбир со сладкой посыпкой</a>
+          <p class="product__price">320 ₽/кг</p>
+          <a class="product__cart" href="#">
+            <span class="sr-only">Добавить в корзину</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
     <section class="advantages">
       <h2 class="sr-only">Преимущества</h2>
-      <p class="page__title advantages__title">
+      <p class="title title--lg advantages__title">
         Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого
         собственного производства на развес
       </p>
       <ul class="advantages__list">
         <li class="advantages__item">
-          Всё наше мороженое изготавливается на собственном производстве с
-          использованием современного оборудования и проверенных временем
-          технологий.
+          <h3 class="sr-only">Собственное производство</h3>
+          <p class="advantages__text">
+            Всё наше мороженое изготавливается на собственном производстве с
+            использованием современного оборудования и проверенных временем
+            технологий.
+          </p>
         </li>
         <li class="advantages__item">
-          Закупка ингредиентов производится только у проверенных фермерских
-          хозяйств, с которыми нас связывает долговременное сотрудничество.
+          <h3 class="sr-only">Проверенные поставщики</h3>
+          <p class="advantages__text">
+            Закупка ингредиентов производится только у проверенных фермерских
+            хозяйств, с которыми нас связывает долговременное сотрудничество.
+          </p>
         </li>
         <li class="advantages__item">
-          Для приготовления мороженого используются сливки и молоко
-          высочайшего качества. Все ингредиенты и добавки произведены из
-          натурального сырья.
+          <h3 class="sr-only">Только качественные ингредиенты</h3>
+          <p class="advantages__text">
+            Для приготовления мороженого используются сливки и молоко
+            высочайшего качества. Все ингредиенты и добавки произведены из
+            натурального сырья.
+          </p>
         </li>
         <li class="advantages__item">
-          Доставка нашего мороженого осуществляется в специальном термопаке,
-          который не даёт мороженому растаять и позволяет сохранить
-          превосходный вкус.
+          <h3 class="sr-only">Доставка в термопаке</h3>
+          <p class="advantages__text">
+            Доставка нашего мороженого осуществляется в специальном термопаке,
+            который не даёт мороженому растаять и позволяет сохранить
+            превосходный вкус.
+          </p>
         </li>
       </ul>
     </section>
-    <!-- ==== ADVANTAGES END ==== -->
 
-    <!-- ==== BLOG START ==== -->
-    <!-- или как section со скрытым заголовоком h2, в карточках будут h3 и классы строить от .blog -->
-    <!-- <section class="blog">
-      <h2 class="sr-only">Наш блог</h2>
-    </section> -->
-    <div class="blog">
+    <section class="blog">
+      <h2 class="sr-only">Вкусные статьи и сладкая рассылка</h2>
       <article class="blog-article">
-        <h2 class="page__title--sm blog-article__title">
+        <h2 class="title title--md blog-article__title">
           10 способов сервировки фруктовых щербетов к столу
         </h2>
         <a class="blog-article__text" href="/blog">Новое в нашем блоге</a>
-        <!-- ссылка, скорее всего, будет вокруг блока. если она нужна -->
-        <!-- <p class="blog-article__text">Новое в нашем блоге</p> -->
       </article>
-      <section class="subscribe">
-        <h2 class="sr-only">Рассылка</h2>
+
+      <article class="subscribe">
+        <h3 class="sr-only">Рассылка</h3>
         <p class="subscribe__text">
           Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего
           самого вкусного, что у нас происходит. Обещаем не спамить и не слать
           всякой ненужной ерунды. Честно =)
         </p>
-        <form class="subscribe__form" name="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-          <input name="email" type="text" placeholder="email@example.com" required>
-          <button type="submit">Отправить</button>
-        </form>
-      </section>
-    </div>
-    <!-- ==== BLOG END ==== -->
 
-    <!-- ==== DELIVERY START ==== -->
+        <form class="subscribe__form" name="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="sr-only" for="subscribe-email">Укажите адрес эл. почты</label>
+          <input class="input subscribe__input" id="subscribe-email" name="email" type="text"
+            placeholder="email@example.com" required>
+          <button class="btn btn--brand subscribe__btn" type="submit">
+            Отправить
+          </button>
+        </form>
+      </article>
+    </section>
+
     <section class="delivery">
       <div class="delivery__inner">
-        <h2 class="page__title delivery__title">
+        <h2 class="title title--lg delivery__title">
           Доставка любимого мороженого на дом
         </h2>
         <p class="delivery__text">
@@ -212,78 +233,77 @@
           ваш заказ в течение часа!
         </p>
 
-        <!-- === FORM === -->
         <h3 class="sr-only">Форма доставки</h3>
         <form class="delivery__form" name="delivery-form" action="https://echo.htmlacademy.ru" method="post">
-          <p>
+          <p class="delivery__text">
             Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы
             подтвердить заказ.
           </p>
-          <fieldset>
-            <p>
-              <label for="delivery-date">Дата</label>
-              <!-- === TOOLTIP ==== -->
-              <!-- <div>
-                <button type="button">Подсказка</button>
-                <p>Текст подсказки</p>
-              </div> -->
-              <input id="delivery-date" name="date" type="date" value="2020-04-01" required>
-              <!-- если со стилизацией date будут проблемы то просто text -->
-              <!-- <input id="delivery-date" type="text" placeholder="01.04.2020" required> -->
-            </p>
-            <p>
-              <label for="delivery-tel">Телефон</label>
-              <input id="delivery-tel" name="tel" type="tel" placeholder="+7 800 999-00-00" required>
-            </p>
-            <p>
-              <label for="delivery-address">Адрес</label>
-              <input id="delivery-address" name="address" type="text" placeholder="ул. Большая Конюшенная, 19/8"
+
+          <fieldset class="delivery__fieldset">
+            <div class="delivery__field">
+              <label class="label delivery__label" for="delivery-date">Дата</label>
+              <input class="input delivery__input" id="delivery-date" name="date" type="date" value="2020-04-01"
                 required>
-            </p>
+              <details class="tooltip delivery__tooltip">
+                <summary class="tooltip__btn">
+                  <span class="sr-only">Подсказка</span>
+                </summary>
+                <p class="tooltip__text">Формат даты дд.мм.гггг</p>
+              </details>
+            </div>
+
+            <div class="delivery__field">
+              <label class="label delivery__label" for="delivery-tel">Телефон</label>
+              <input class="input delivery__input" id="delivery-tel" name="tel" type="tel"
+                placeholder="+7 800 999-00-00" required>
+            </div>
+
+            <div class="delivery__field">
+              <label class="label delivery__label" for="delivery-address">Адрес</label>
+              <input class="delivery__input" id="delivery-address" name="address" type="text"
+                placeholder="ул. Большая Конюшенная, 19/8" required>
+              <details class="tooltip delivery__tooltip">
+                <summary class="tooltip__btn">
+                  <span class="sr-only">Подсказка</span>
+                </summary>
+                <p class="tooltip__text">Укажите улицу, дом и кватиру/офис</p>
+              </details>
+            </div>
           </fieldset>
-          <button type="submit">Отправить</button>
+
+          <button class="btn btn--brand delivery__submit" type="submit">
+            Отправить
+          </button>
         </form>
       </div>
     </section>
-    <!-- ==== DELIVERY END ==== -->
 
-    <!-- ==== CONTACTS START ==== -->
     <section class="contacts">
       <h2 class="sr-only">Контакты</h2>
       <div class="contacts__inner">
         <dl class="contacts__list">
-          <dt class="contacts__title">
+          <dt class="title title--sm contacts__title">
             Адрес главного офиса и офлайн-магазина:
           </dt>
           <dd class="contacts__text">
             наб. реки Карповки, 5 лит П, Санкт-Петербург
           </dd>
-          <dt class="contacts__title">Для заказов по телефону:</dt>
+          <dt class="title title--sm contacts__title">
+            Для заказов по телефону:
+          </dt>
           <dd class="contacts__text">
             <a class="contacts__link" href="tel:+78128121212">+7 (812) 812-12-12</a>
             <small class="contacts__text-sm">(с 10 до 20 ежедневно)</small>
           </dd>
-          <!-- или отдельныи элементом -->
-          <!-- <dd class="contacts__text">
-            <small class="contacts__text-sm">(с 10 до 20 ежедневно)</small>
-          </dd>
-          или так
-          <dt class="sr-only">Часы работы</dt>
-          <dd class="contacts__text contacts__text-/-sm">(с 10 до 20 ежедневно)</dd> -->
-          <!-- "/" чтобы валидатор не ругался -->
         </dl>
-        <button class="page__btn contacts__btn" type="button">
-          Форма обратной связи
-        </button>
+        <a class="btn btn--brand contacts__btn" href="#">Форма обратной связи</a>
       </div>
     </section>
-    <!-- ==== CONTACTS END ==== -->
   </main>
 
-  <!-- ==== FOOTER START ==== -->
-  <footer class="page__footer footer">
-    <!-- ==== SOCIAL ==== -->
-    <div class="social footer__social">
+  <footer class="page__footer">
+    <div class="social">
       <h3 class="sr-only">Мы в социальных сервисах</h3>
       <ul class="social__list">
         <li class="social__item">
@@ -304,37 +324,34 @@
       </ul>
     </div>
 
-    <!-- ==== NAVIGATION ==== -->
-    <div class="footer__nav">
+    <nav class="footer-nav">
       <h3 class="sr-only">Навигация</h3>
-      <ul class="footer__list">
-        <li class="footer__item">
-          <a class="footer__link footer__link--has-icon" href="#">Для поставщиков</a>
+      <ul class="footer-nav__list">
+        <li class="footer-nav__item">
+          <a class="footer-nav__link footer-nav__link--favorite" href="#">Для поставщиков</a>
         </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Наши документы</a>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Наши документы</a>
         </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">О производстве</a>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">О производстве</a>
         </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Экологические стандарты</a>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Экологические стандарты</a>
         </li>
       </ul>
-    </div>
+    </nav>
 
-    <!-- ==== DEVELOPER ==== -->
     <div class="developer">
       <h3 class="sr-only">Разработчик</h3>
       <img class="developer__img" src="img/logo-htmlacademy.svg" width="93" height="27" alt="Логотип HTML Academy">
-      <address class="develper__text">
+      <address class="developer__text">
         Сделано в
         <a class="developer__link" href="https://htmlacademy.ru">.html academy</a>
-        © 2021
+        © 2023
       </address>
     </div>
   </footer>
-  <!-- ==== FOOTER END ==== -->
 </body>
 
 </html>

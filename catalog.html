@@ -59,7 +59,84 @@
 
   <h1 class="title title--lg page__title">Сливочное мороженое</h1>
 
-  <h2 class="sr-only">Фильтры по категориям</h2>
+  <section class="filter">
+    <h2 class="sr-only">Фильтры по категориям</h2>
+
+    <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
+
+      <fieldset class="filter__fieldset">
+        <legend class="filter__legend">Сортировка:</legend>
+        <select id="filter-sort" name="sort">
+          <option value="popular" selected>по популярности</option>
+          <option value="price">по цене</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="filter__fieldset">
+        <legend class="filter__subtitle">Цена:</legend>
+
+        <div class="range-filter">
+          <label class="sr-only" for="min-price">Минимальная цена</label>
+          <input class="range-filter__field" id="min-price" type="number" name="min-price" min="0" max="5000" value="100">
+          <span class="range-filter__sign">₽ - </span>
+
+          <label class="sr-only" for="max-price">Максимальная цена</label>
+          <input class="range-filter__field" id="max-price" type="number" name="max-price" min="0" max="10000" value="500">
+          <span class="range-filter__sign">₽</span>
+        </div>
+      </fieldset>
+
+      <fieldset class="filter__fieldset">
+        <legend class="filter__legend">Жирность:</legend>
+        <ul class="filter__list">
+          <li class="filter__item">
+            <input class="sr-only" id="filter-0" type="radio" name="fat" value="0">
+            <label class="filter__radio" for="filter-0">0%</label>
+          </li>
+          <li class="filter__item">
+            <input class="sr-only" id="filter-lt-10" type="radio" name="fat" value="lt-10" checked>
+            <label class="filter__radio" for="filter-lt-10">до 10%</label>
+          </li>
+          <li class="filter__item">
+            <input class="sr-only" id="filter-lt-30" type="radio" name="fat" value="lt-30">
+            <label class="filter__radio" for="filter-lt-30">до 30%</label>
+          </li>
+          <li class="filter__item">
+            <input class="sr-only" id="filter-gt-30" type="radio" name="fat" value="gt-30">
+            <label class="filter__radio" for="filter-gt-30">до 30%</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="filter__fieldset">
+        <legend class="filter__legend">Наполнители:</legend>
+        <ul class="filter__list">
+          <li class="filter__item">
+            <input class="sr-only" id="filter-chocolate" type="checkbox" name="toppings" value="chocolate" checked>
+            <label class="filter__check" for="filter-chocolate">шоколадные</label>
+          </li>
+          <li class="filter__item">
+            <input class="sr-only" id="filter-sugar" type="checkbox" name="toppings" value="sugar" checked>
+            <label class="filter__check" for="filter-sugar">сахарные посыпки</label>
+          </li>
+          <li class="filter__item">
+            <input class="sr-only" id="filter-fruits" type="checkbox" name="toppings" value="fruits">
+            <label class="filter__check" for="filter-fruits">фрукты</label>
+          </li>
+          <li class="filter__item">
+            <input class="sr-only" id="filter-syrop" type="checkbox" name="toppings" value="syrup">
+            <label class="filter__check" for="filter-syrop">сиропы</label>
+          </li>
+          <li class="filter__item">
+            <input class="sr-only" id="filter-jam" type="checkbox" name="toppings" value="jam">
+            <label class="filter__check" for="filter-jam">джемы</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <button class="btn btn--outline filter__btn" type="submit">Применить</button>
+    </form>
+  </section>
 
   <section class="products">
     <h2 class="sr-only">Список товаров</h2>

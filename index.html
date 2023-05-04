@@ -59,6 +59,37 @@
         </li>
         <li class="user-menu__item">
           <a class="user-menu__link" href="#">Авторизация</a>
+
+          <form class="menu__dropdown sign-in" name="sign-in" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="sign-in__fieldset">
+              <legend class="title title--md sign-in__title">Личный кабинет</legend>
+              <p class="sign-in__field">
+                <label class="sr-only" for="sign-in-email">Электронная почта</label>
+                <input class="input sign-in__input" id="sign-in-email" type="email" name="sign-in-email" value="email@example.com" required>
+              </p>
+              <p class="sign-in__field">
+                <label class="sr-only" for="sign-in-password">Пароль</label>
+                <input class="input sign-in__input" id="sign-in-password" type="password" name="sign-in-password" value="password" required>
+              </p>
+            </fieldset>
+  
+            <button class="btn btn--brand sign-in__btn" type="submit">Войти</button>
+  
+            <ul class="sign-in__list">
+              <li class="sign-in__item">
+                <a class="sign-in__link" href="#">Забыли пароль?</a>
+              </li>
+              <li class="sign-in__item">
+                <a class="sign-in__link" href="#">Регистрация</a>
+              </li>
+            </ul>
+
+            <!-- <p class="sign-in__links">
+              <a class="sign-in__link" href="#">Забыли пароль?</a>
+              <a class="sign-in__link" href="#">Регистрация</a>
+            </p> -->
+          </form>
+
         </li>
         <li class="user-menu__item">
           <a class="user-menu__link" href="#">Корзина</a>

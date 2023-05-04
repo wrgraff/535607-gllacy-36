@@ -356,6 +356,31 @@
         <a class="btn btn--brand contacts__btn" href="#">Форма обратной связи</a>
       </div>
     </section>
+
+    <section class="feedback">
+      <h2 class="sr-only">Форма обратной связи</h2>
+      <p class="title title--md feedback__title">Мы обязательно ответим вам!</p>
+      <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="feedback__fieldset">
+          <p class="feedback__field">
+            <label class="sr-only" for="name">Введите имя и фамилию</label>
+            <input class="input feedback__input" id="name" type="text" name="name" placeholder="Имя и фамилия" required>
+          </p>
+          <p class="feedback__field">
+            <label class="sr-only" for="email">Введите адрес эл. почты</label>
+            <input class="input feedback__input" id="email" type="email" name="email" placeholder="email@example.com" required>
+          </p>
+          <p class="feedback__field">
+            <label class="sr-only" for="message">Введите текст сообщения</label>
+            <textarea class="input feedback__input feedback__textarea" id="message" name="message" cols="30" rows="10" required>
+              В свободной форме
+            </textarea>
+          </p>
+        </fieldset>
+        <button class="btn btn--brand feedback__submit" type="submit">Отправить</button>
+      </form>
+    </section>
+
   </main>
 
   <footer class="page__footer">

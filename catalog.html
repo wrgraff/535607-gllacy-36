@@ -86,7 +86,32 @@
 
       </li>
       <li class="user-menu__item">
-        <a class="user-menu__link" href="#">Корзина</a>
+        <a class="user-menu__link" href="#">
+          <!-- <span>Нет товаров</span> -->
+          <span>2 товара</span>
+        </a>
+
+        <div class="menu__dropdown cart">
+          <p class="title title--md cart__title">Корзина</p>
+
+          <ul class="cart__list">
+            <li class="cart__item">
+              <a class="title title--xs cart__link" href="#">Малинка</a>
+              <span class="cart__text">1 кг x 310 ₽</span>
+              <span class="title title--xs cart__price">310 ₽</span>
+              <button class="cart__delete" type="button">Убрать</button>
+            </li>
+            <li class="cart__item">
+              <a class="title title--xs cart__link" href="#">Бабл-гам</a>
+              <span class="cart__text">1,5 кг x 320 ₽</span>
+              <span class="title title--xs cart__price">480 ₽</span>
+              <button class="cart__delete" type="button">Убрать</button>
+            </li>
+          </ul>
+
+          <a class="btn btn--brand cart__btn" href="#">Оформить заказ</a>
+          <p class="title title--xs cart__sum">Итого: <span>790</span> ₽</p>
+        </div>
       </li>
     </ul>
   </nav>

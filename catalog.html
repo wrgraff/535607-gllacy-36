@@ -3,21 +3,21 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Магазин Глейси - Каталог</title>
+  <title>Магазин Глейси - Каталог</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<header class="page__header">
+<header class="header">
   <a class="logo" href="index.html" title="Вернуться на главную">
     <img class="logo__img" src="img/logo-gllacy.svg" width="137" height="56" alt="Логотип магазина Глейси">
   </a>
 
-  <nav class="menu">
-    <ul class="menu__list main-nav">
+  <nav class="header__menu">
+    <ul class="main-nav">
       <li class="main-nav__item main-nav__item--has-dropdown">
         <a class="main-nav__link" href="#">Каталог</a>
 
-        <ul class="menu__dropdown dropdown">
+        <ul class="dropdown">
           <li class="dropdown__item">
             <a class="dropdown__link" href="#">Новинки</a>
           </li>
@@ -44,13 +44,13 @@
       </li>
     </ul>
 
-    <a class="menu__tel" href="tel:+78005558628">+7 800 555-86-28</a>
+    <a class="header__tel" href="tel:+78005558628">+7 800 555-86-28</a>
 
-    <ul class="menu__list user-menu">
+    <ul class="user-menu">
       <li class="user-menu__item">
         <a class="user-menu__link" href="#">Поиск</a>
 
-        <form class="page__dropdown search" name="search" action="https://echo.htmlacademy.ru" method="get">
+        <form class="search" name="search" action="https://echo.htmlacademy.ru" method="get">
           <label class="sr-only" for="search">Поиск по сайту</label>
           <input class="input search__field" id="search" type="search" name="search" placeholder="Поиск по сайту" required>
         </form>
@@ -59,7 +59,7 @@
       <li class="user-menu__item">
         <a class="user-menu__link" href="#">Авторизация</a>
 
-        <form class="menu__dropdown sign-in" name="sign-in" action="https://echo.htmlacademy.ru" method="post">
+        <form class="sign-in" name="sign-in" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="sign-in__fieldset">
             <legend class="title title--md sign-in__title">Личный кабинет</legend>
             <p class="sign-in__field">
@@ -74,24 +74,19 @@
 
           <button class="btn btn--brand sign-in__btn" type="submit">Войти</button>
 
-          <ul class="sign-in__list">
-            <li class="sign-in__item">
-              <a class="sign-in__link" href="#">Забыли пароль?</a>
-            </li>
-            <li class="sign-in__item">
-              <a class="sign-in__link" href="#">Регистрация</a>
-            </li>
-          </ul>
+          <p class="sign-in__links">
+            <a class="sign-in__link" href="#">Забыли пароль?</a>
+            <a class="sign-in__link" href="#">Регистрация</a>
+          </p>
         </form>
 
       </li>
       <li class="user-menu__item">
         <a class="user-menu__link" href="#">
-          <!-- <span>Нет товаров</span> -->
           <span>2 товара</span>
         </a>
 
-        <div class="menu__dropdown cart">
+        <div class="cart">
           <p class="title title--md cart__title">Корзина</p>
 
           <ul class="cart__list">
@@ -109,8 +104,8 @@
             </li>
           </ul>
 
-          <a class="btn btn--brand cart__btn" href="#">Оформить заказ</a>
           <p class="title title--xs cart__sum">Итого: <span>790</span> ₽</p>
+          <a class="btn btn--brand cart__btn" href="#">Оформить заказ</a>
         </div>
       </li>
     </ul>
@@ -218,8 +213,10 @@
     <h2 class="sr-only">Список товаров</h2>
     <ul class="products__list">
       <li class="product">
-        <h3 class="title title--md product__title">Малинка</h3>
-        <a class="product__link" href="#">Сливочное мороженое с малиновым джемом</a>
+        <h3 class="title title--md product__title">
+          <a class="product__link" href="#">Малинка</a>
+        </h3>
+        <p class="product__text">Сливочное мороженое с малиновым джемом</p>
         <p class="product__price">310 ₽/кг</p>
         <a class="product__cart" href="#">
           <span class="sr-only">Добавить в корзину</span>
@@ -227,8 +224,10 @@
       </li>
 
       <li class="product">
-        <h3 class="title title--md product__title">Фисташка</h3>
-        <a class="product__link" href="#">Фисташковый пломбир с кусочками шоколада</a>
+        <h3 class="title title--md product__title">
+          <a class="product__link" href="#">Фисташка</a>
+        </h3>
+        <p class="product__text">Фисташковый пломбир с кусочками шоколада</p>
         <p class="product__price">340 ₽/кг</p>
         <a class="product__cart" href="#">
           <span class="sr-only">Добавить в корзину</span>
@@ -236,8 +235,10 @@
       </li>
 
       <li class="product">
-        <h3 class="title title--md product__title">Черника</h3>
-        <a class="product__link" href="#">Крем-брюле с черничным джемом</a>
+        <h3 class="title title--md product__title">
+          <a class="product__link" href="#">Черника</a>
+        </h3>
+        <p class="product__text">Крем-брюле с черничным джемом</p>
         <p class="product__price">330 ₽/кг</p>
         <a class="product__cart" href="#">
           <span class="sr-only">Добавить в корзину</span>
@@ -245,8 +246,10 @@
       </li>
 
       <li class="product">
-        <h3 class="title title--md product__title">Бабл-гам</h3>
-        <a class="product__link" href="#">Ванильный пломбир со сладкой посыпкой</a>
+        <h3 class="title title--md product__title">
+          <a class="product__link" href="#">Бабл-гам</a>
+        </h3>
+        <p class="product__text">Ванильный пломбир со сладкой посыпкой</p>
         <p class="product__price">320 ₽/кг</p>
         <a class="product__cart" href="#">
           <span class="sr-only">Добавить в корзину</span>
@@ -254,8 +257,10 @@
       </li>
 
       <li class="product">
-        <h3 class="title title--md product__title">Ежевика</h3>
-        <a class="product__link" href="#">Сливочное мороженое с ежевичным джемом</a>
+        <h3 class="title title--md product__title">
+          <a class="product__link" href="#">Ежевика</a>
+        </h3>
+        <p class="product__text">Сливочное мороженое с ежевичным джемом</p>
         <p class="product__price">330 ₽/кг</p>
         <a class="product__cart" href="#">
           <span class="sr-only">Добавить в корзину</span>
@@ -263,8 +268,10 @@
       </li>
 
       <li class="product">
-        <h3 class="title title--md product__title">Банан</h3>
-        <a class="product__link" href="#">Сливочный пломбир с банановым вкусом</a>
+        <h3 class="title title--md product__title">
+          <a class="product__link" href="#">Банан</a>
+        </h3>
+        <p class="product__text">Сливочный пломбир с банановым вкусом</p>
         <p class="product__price">340 ₽/кг</p>
         <a class="product__cart" href="#">
           <span class="sr-only">Добавить в корзину</span>
@@ -272,8 +279,10 @@
       </li>
 
       <li class="product">
-        <h3 class="title title--md product__title">Шоколадка</h3>
-        <a class="product__link" href="#">Классический шоколадный пломбир</a>
+        <h3 class="title title--md product__title">
+          <a class="product__link" href="#">Шоколадка</a>
+        </h3>
+        <p class="product__text">Классический шоколадный пломбир</p>
         <p class="product__price">270 ₽/кг</p>
         <a class="product__cart" href="#">
           <span class="sr-only">Добавить в корзину</span>
@@ -281,8 +290,10 @@
       </li>
 
       <li class="product">
-        <h3 class="title title--md product__title">Клубничка</h3>
-        <a class="product__link" href="#">Сливочный пломбир с клубничным вкусом</a>
+        <h3 class="title title--md product__title">
+          <a class="product__link" href="#">Клубничка</a>
+        </h3>
+        <p class="product__text">Сливочный пломбир с клубничным вкусом</p>
         <p class="product__price">300 ₽/кг</p>
         <a class="product__cart" href="#">
           <span class="sr-only">Добавить в корзину</span>
@@ -290,8 +301,10 @@
       </li>
 
       <li class="product">
-        <h3 class="title title--md product__title">Лимон</h3>
-        <a class="product__link" href="#">Освежающий лимонный сорбет</a>
+        <h3 class="title title--md product__title">
+          <a class="product__link" href="#">Лимон</a>
+        </h3>
+        <p class="product__text">Освежающий лимонный сорбет</p>
         <p class="product__price">310 ₽/кг</p>
         <a class="product__cart" href="#">
           <span class="sr-only">Добавить в корзину</span>
@@ -299,8 +312,10 @@
       </li>
 
       <li class="product">
-        <h3 class="title title--md product__title">Ментол</h3>
-        <a class="product__link" href="#">Сливочный пломбир с ментоловым сиропом</a>
+        <h3 class="title title--md product__title">
+          <a class="product__link" href="#">Ментол</a>
+        </h3>
+        <p class="product__text">Сливочный пломбир с ментоловым сиропом</p>
         <p class="product__price">320 ₽/кг</p>
         <a class="product__cart" href="#">
           <span class="sr-only">Добавить в корзину</span>
@@ -308,8 +323,10 @@
       </li>
 
       <li class="product">
-        <h3 class="title title--md product__title">Орешек</h3>
-        <a class="product__link" href="#">Фисташковый пломбир с шоколадным сиропом</a>
+        <h3 class="title title--md product__title">
+          <a class="product__link" href="#">Орешек</a>
+        </h3>
+        <p class="product__text">Фисташковый пломбир с шоколадным сиропом</p>
         <p class="product__price">360 ₽/кг</p>
         <a class="product__cart" href="#">
           <span class="sr-only">Добавить в корзину</span>
@@ -317,8 +334,10 @@
       </li>
 
       <li class="product">
-        <h3 class="title title--md product__title">Крем-брюле</h3>
-        <a class="product__link" href="#">Классическое крем-брюле</a>
+        <h3 class="title title--md product__title">
+          <a class="product__link" href="#">Крем-брюле</a>
+        </h3>
+        <p class="product__text">Классическое крем-брюле</p>
         <p class="product__price">280 ₽/кг</p>
         <a class="product__cart" href="#">
           <span class="sr-only">Добавить в корзину</span>
@@ -357,7 +376,7 @@
   </section>
 </main>
 
-<footer class="page__footer">
+<footer class="footer">
   <div class="social">
     <h3 class="sr-only">Мы в социальных сервисах</h3>
     <ul class="social__list">

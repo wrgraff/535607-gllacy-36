@@ -49,27 +49,39 @@
 
       <ul class="user-menu">
         <li class="user-menu__item">
-          <a class="user-menu__link" href="#">Поиск</a>
+          <a class="user-menu__link user-menu__link--search" href="#" aria-label="Поиск по сайту">
+            <svg class="user-menu__icon" width="16" height="16" aria-hidden="true">
+              <use href="img/stack.svg#search"></use>
+            </svg>
+          </a>
 
           <form class="search" name="search" action="https://echo.htmlacademy.ru" method="get">
             <label class="sr-only" for="search">Поиск по сайту</label>
-            <input class="input search__field" id="search" type="search" name="search" placeholder="Поиск по сайту" required>
+            <input class="input search__field" id="search" type="search" name="search" placeholder="Поиск по сайту"
+              required>
           </form>
 
         </li>
         <li class="user-menu__item">
-          <a class="user-menu__link" href="#">Авторизация</a>
+          <a class="user-menu__link" href="#" aria-label="Личный кабинет">
+            <svg class="user-menu__icon" width="16" height="16" aria-hidden="true">
+              <use href="img/stack.svg#log-in"></use>
+            </svg>
+            <span>Вход</span>
+          </a>
 
           <form class="sign-in" name="sign-in" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="sign-in__fieldset">
               <legend class="title title--md sign-in__title">Личный кабинет</legend>
               <p class="sign-in__field">
                 <label class="sr-only" for="sign-in-email">Электронная почта</label>
-                <input class="input sign-in__input" id="sign-in-email" type="email" name="sign-in-email" value="email@example.com" required>
+                <input class="input sign-in__input" id="sign-in-email" type="email" name="sign-in-email"
+                  value="email@example.com" required>
               </p>
               <p class="sign-in__field">
                 <label class="sr-only" for="sign-in-password">Пароль</label>
-                <input class="input sign-in__input" id="sign-in-password" type="password" name="sign-in-password" value="password" required>
+                <input class="input sign-in__input" id="sign-in-password" type="password" name="sign-in-password"
+                  value="password" required>
               </p>
             </fieldset>
 
@@ -83,7 +95,10 @@
 
         </li>
         <li class="user-menu__item">
-          <a class="user-menu__link" href="#">
+          <a class="user-menu__link" href="#" aria-label="Корзина">
+            <svg class="user-menu__icon" width="16" height="16" aria-hidden="true">
+              <use href="img/stack.svg#cart"></use>
+            </svg>
             <span>2 товара</span>
           </a>
 
@@ -190,8 +205,10 @@
           </h3>
           <p class="product__text">Сливочное мороженое с малиновым джемом</p>
           <p class="product__price">310 ₽/кг</p>
-          <a class="product__cart" href="#">
-            <span class="sr-only">Добавить в корзину</span>
+          <a class="product__cart" href="#" aria-label="Добавить в корзину">
+            <svg class="product__cart-icon" width="16" height="16" aria-hidden="true">
+              <use href="img/stack.svg#cart"></use>
+            </svg>
           </a>
         </li>
 
@@ -201,8 +218,10 @@
           </h3>
           <p class="product__text">Фисташковый пломбир с кусочками шоколада</p>
           <p class="product__price">340 ₽/кг</p>
-          <a class="product__cart" href="#">
-            <span class="sr-only">Добавить в корзину</span>
+          <a class="product__cart" href="#" aria-label="Добавить в корзину">
+            <svg class="product__cart-icon" width="16" height="16" aria-hidden="true">
+              <use href="img/stack.svg#cart"></use>
+            </svg>
           </a>
         </li>
 
@@ -212,8 +231,10 @@
           </h3>
           <p class="product__text">Крем-брюле с черничным джемом</p>
           <p class="product__price">330 ₽/кг</p>
-          <a class="product__cart" href="#">
-            <span class="sr-only">Добавить в корзину</span>
+          <a class="product__cart" href="#" aria-label="Добавить в корзину">
+            <svg class="product__cart-icon" width="16" height="16" aria-hidden="true">
+              <use href="img/stack.svg#cart"></use>
+            </svg>
           </a>
         </li>
 
@@ -223,8 +244,10 @@
           </h3>
           <p class="product__text">Ванильный пломбир со сладкой посыпкой</p>
           <p class="product__price">320 ₽/кг</p>
-          <a class="product__cart" href="#">
-            <span class="sr-only">Добавить в корзину</span>
+          <a class="product__cart" href="#" aria-label="Добавить в корзину">
+            <svg class="product__cart-icon" width="16" height="16" aria-hidden="true">
+              <use href="img/stack.svg#cart"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -323,8 +346,10 @@
               <input class="input delivery__input" id="delivery-date" name="date" type="date" value="2020-04-01"
                 required>
               <details class="tooltip delivery__tooltip">
-                <summary class="tooltip__btn">
-                  <span class="sr-only">Подсказка</span>
+                <summary class="tooltip__btn" aria-label="Подсказка">
+                  <svg class="tooltip__icon" width="16" height="16" aria-hidden="true">
+                    <use href="img/stack.svg#info"></use>
+                  </svg>
                 </summary>
                 <p class="tooltip__text">Формат даты дд.мм.гггг</p>
               </details>
@@ -341,8 +366,10 @@
               <input class="delivery__input" id="delivery-address" name="address" type="text"
                 placeholder="ул. Большая Конюшенная, 19/8" required>
               <details class="tooltip delivery__tooltip">
-                <summary class="tooltip__btn">
-                  <span class="sr-only">Подсказка</span>
+                <summary class="tooltip__btn" aria-label="Подсказка">
+                  <svg class="tooltip__icon" width="16" height="16" aria-hidden="true">
+                    <use href="img/stack.svg#info"></use>
+                  </svg>
                 </summary>
                 <p class="tooltip__text">Укажите улицу, дом и кватиру/офис</p>
               </details>
@@ -383,15 +410,18 @@
               <legend class="sr-only">Форма обратной связи</legend>
               <p class="feedback__field">
                 <label class="sr-only" for="name">Имя и фамилию</label>
-                <input class="input feedback__input" id="name" type="text" name="name" placeholder="Имя и фамилия" required>
+                <input class="input feedback__input" id="name" type="text" name="name" placeholder="Имя и фамилия"
+                  required>
               </p>
               <p class="feedback__field">
                 <label class="sr-only" for="email">Электронная почта</label>
-                <input class="input feedback__input" id="email" type="email" name="email" placeholder="email@example.com" required>
+                <input class="input feedback__input" id="email" type="email" name="email"
+                  placeholder="email@example.com" required>
               </p>
               <p class="feedback__field">
                 <label class="sr-only" for="message">Текст сообщения</label>
-                <textarea class="input feedback__input feedback__textarea" id="message" name="message" cols="30" rows="10" required>В свободной форме</textarea>
+                <textarea class="input feedback__input feedback__textarea" id="message" name="message" cols="30"
+                  rows="10" required>В свободной форме</textarea>
               </p>
             </fieldset>
             <button class="btn btn--brand feedback__submit" type="submit">Отправить</button>
@@ -406,18 +436,24 @@
       <h3 class="sr-only">Мы в социальных сервисах</h3>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link" href="https://t.me/htmlacademy">
-            <span class="sr-only">Наш канал в Telegram</span>
+          <a class="social__link" href="https://t.me/htmlacademy" aria-label="Наш канал в Telegram">
+            <svg class="social__icon" width="24" height="24" aria-hidden="true">
+              <use href="img/stack.svg#telegram"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://vk.com/htmlacademy">
-            <span class="sr-only">Наша группа во Vkontakte</span>
+          <a class="social__link" href="https://vk.com/htmlacademy" aria-label="Наша группа во Vkontakte">
+            <svg class="social__icon" width="24" height="24" aria-hidden="true">
+              <use href="img/stack.svg#vk"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="sr-only">Наш канал на Youtube</span>
+          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" aria-label="Наш канал на Youtube">
+            <svg class="social__icon" width="24" height="24" aria-hidden="true">
+              <use href="img/stack.svg#youtube"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -443,7 +479,9 @@
 
     <div class="developer">
       <h3 class="sr-only">Разработчик</h3>
-      <img class="developer__img" src="img/logo-htmlacademy.svg" width="93" height="27" alt="Логотип HTML Academy">
+      <svg class="developer__icon" width="93" height="27" aria-label="Логотип HTML Academy">
+        <use href="img/stack.svg#htmlacademy"></use>
+      </svg>
       <address class="developer__text">
         Сделано в
         <a class="developer__link" href="https://htmlacademy.ru">.html academy</a>

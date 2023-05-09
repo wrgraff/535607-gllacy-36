@@ -1,47 +1,47 @@
 {
-	"name": "gllacy",
-	"private": true,
-	"description": "Личный проект «Gllacy» от HTML Academy",
-	"devDependencies": {
-		"autoprefixer": "^10.4.14",
-		"browser-sync": "^2.29.1",
-		"editorconfig-checker": "^5.0.1",
-		"gulp": "^4.0.2",
-		"gulp-plumber": "^1.2.1",
-		"gulp-postcss": "^9.0.1",
-		"gulp-rename": "^2.0.0",
-		"gulp-stacksvg": "^2.0.1",
-		"gulp-svgmin": "^4.1.0",
-		"gulp-w3c-html-validator": "^5.2.0",
-		"postcss": "^8.4.23",
-		"postcss-csso": "^6.0.1",
-		"postcss-import": "^15.1.0",
-		"pre-commit": "^1.2.2",
-		"stylelint": "^15.5.0",
-		"stylelint-config-firefoxic": "1.2.1"
-	},
-	"scripts": {
-		"editorconfig": "editorconfig-checker",
-		"w3c": "gulp validateMarkup --silent",
-		"lint": "npm run editorconfig && npm run w3c",
-		"build": "gulp compileProject",
-		"start": "gulp runDev"
-	},
-	"browserslist": [
-		"last 2 versions",
-		"not dead",
-		"not op_mini all",
-		"not < 0.2%"
-	],
-	"editorconfig-cli": [
-		"*.{json,js,html,css,svg,webmanifest}",
-		"icons/**/*.svg",
-		"img/**/*.svg",
-		"css/**/*.css",
-		"scritps/**/*.js"
-	],
-	"engines": {
-		"node": ">=16"
-	},
-	"type": "module"
+  "name": "gllacy",
+  "private": true,
+  "description": "Личный проект «Gllacy» от HTML Academy",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "browser-sync": "^2.29.1",
+    "editorconfig-checker": "^5.0.1",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-stacksvg": "^2.0.1",
+    "gulp-svgmin": "^4.1.0",
+    "gulp-w3c-html-validator": "^5.2.0",
+    "postcss": "^8.4.23",
+    "postcss-csso": "^6.0.1",
+    "postcss-import": "^15.1.0",
+    "pre-commit": "^1.2.2",
+    "stylelint": "^15.5.0",
+    "stylelint-config-firefoxic": "1.2.1"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-checker",
+    "w3c": "gulp validateMarkup --silent",
+    "lint": "npm run editorconfig && npm run w3c",
+    "build": "gulp compileProject",
+    "start": "gulp runDev"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not op_mini all",
+    "not < 0.2%"
+  ],
+  "editorconfig-cli": [
+    "*.{json,js,html,css,svg,webmanifest}",
+    "icons/**/*.svg",
+    "img/**/*.svg",
+    "css/**/*.css",
+    "scritps/**/*.js"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "type": "module"
 }

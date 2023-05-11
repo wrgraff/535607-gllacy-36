@@ -107,16 +107,44 @@
 
             <ul class="cart__list">
               <li class="cart__item">
+
+                <picture class="cart__img">
+                  <source srcset="img/products/product-1-thumb.avif, img/products/product-1-thumb@2x.avif 2x"
+                    type="image/avif">
+                  <source srcset="img/products/product-1-thumb.webp, img/products/product-1-thumb@2x.webp 2x"
+                    type="image/webp">
+                  <img src="img/products/product-1-thumb.jpg" srcset="img/products/product-1-thumb@2x.jpg 2x" width="46"
+                    height="46" alt="Сливочное мороженое с малиновым джемом">
+                </picture>
+
                 <a class="title title--xs cart__link" href="#">Малинка</a>
                 <span class="cart__text">1 кг x 310 ₽</span>
                 <span class="title title--xs cart__price">310 ₽</span>
-                <button class="cart__delete" type="button">Убрать</button>
+                <button class="cart__delete" type="button" aria-label="Убрать из корзины">
+                  <svg class="cart__delete-icon" width="16" height="16" aria-hidden="true">
+                    <use href="img/stack.svg#cross"></use>
+                  </svg>
+                </button>
               </li>
               <li class="cart__item">
+
+                <picture class="cart__img">
+                  <source srcset="img/products/product-4-thumb.avif, img/products/product-4-thumb@2x.avif 2x"
+                    type="image/avif">
+                  <source srcset="img/products/product-4-thumb.webp, img/products/product-4-thumb@2x.webp 2x"
+                    type="image/webp">
+                  <img src="img/products/product-4-thumb.jpg" srcset="img/products/product-4-thumb@2x.jpg 2x" width="46"
+                    height="46" alt="Ванильный пломбир со сладкой посыпкой">
+                </picture>
+
                 <a class="title title--xs cart__link" href="#">Бабл-гам</a>
                 <span class="cart__text">1,5 кг x 320 ₽</span>
                 <span class="title title--xs cart__price">480 ₽</span>
-                <button class="cart__delete" type="button">Убрать</button>
+                <button class="cart__delete" type="button" aria-label="Убрать из корзины">
+                  <svg class="cart__delete-icon" width="16" height="16" aria-hidden="true">
+                    <use href="img/stack.svg#cross"></use>
+                  </svg>
+                </button>
               </li>
             </ul>
 
@@ -138,6 +166,14 @@
           <h3 class="title title--xl carousel__title">
             Нежный пломбир с клубничным джемом
           </h3>
+
+          <picture class="carousel__img">
+            <source srcset="img/carousel/slide-1.avif, img/carousel/slide-1@2x.avif 2x" type="image/avif">
+            <source srcset="img/carousel/slide-1.webp, img/carousel/slide-1@2x.webp 2x" type="image/webp">
+            <img src="img/carousel/slide-1.png" srcset="img/carousel/slide-1@2x.png 2x" width="329" height="507"
+              alt="Нежный пломбир с клубничным джемом">
+          </picture>
+
           <p class="carousel__text">
             Натуральное мороженое из свежих сливок и молока с вкуснейшим
             клубничным джемом – это идеальный десерт для всей семьи.
@@ -149,6 +185,14 @@
           <h3 class="title title--xl carousel__title">
             Сливочное мороженое со вкусом банана
           </h3>
+
+          <picture class="carousel__img">
+            <source srcset="img/carousel/slide-2.avif, img/carousel/slide-2@2x.avif 2x" type="image/avif">
+            <source srcset="img/carousel/slide-2.webp, img/carousel/slide-2@2x.webp 2x" type="image/webp">
+            <img src="img/carousel/slide-2.png" srcset="img/carousel/slide-2@2x.png 2x" width="312" height="507"
+              alt="Сливочное мороженое со вкусом банана">
+          </picture>
+
           <p class="carousel__text">
             Сливочное мороженое с ярким банановым вкусом подарит вам свежесть
             и наслаждение даже в самый жаркий летний день.
@@ -160,6 +204,14 @@
           <h3 class="title title--xl carousel__title">
             Карамельный пломбир с маршмеллоу
           </h3>
+
+          <picture class="carousel__img">
+            <source srcset="img/carousel/slide-3.avif, img/carousel/slide-3@2x.avif 2x" type="image/avif">
+            <source srcset="img/carousel/slide-3.webp, img/carousel/slide-3@2x.webp 2x" type="image/webp">
+            <img src="img/carousel/slide-3.png" srcset="img/carousel/slide-3@2x.png 2x" width="350" height="507"
+              alt="Карамельный пломбир с маршмеллоу">
+          </picture>
+
           <p class="carousel__text">
             Необычный сладкий десерт с карамельным топпингом и кусочками
             зефира завоюет сердца сладкоежек всех возрастов.
@@ -203,6 +255,14 @@
           <h3 class="title title--md product__title">
             <a class="product__link" href="#">Малинка</a>
           </h3>
+
+          <picture class="product__img">
+            <source srcset="img/products/product-1.avif, img/products/product-1@2x.avif 2x" type="image/avif">
+            <source srcset="img/products/product-1.webp, img/products/product-1@2x.webp 2x" type="image/webp">
+            <img src="img/products/product-1.jpg" srcset="img/products/product-1@2x.jpg 2x" width="168" height="168"
+              alt="Сливочное мороженое с малиновым джемом">
+          </picture>
+
           <p class="product__text">Сливочное мороженое с малиновым джемом</p>
           <p class="product__price">310 ₽/кг</p>
           <a class="product__cart" href="#" aria-label="Добавить в корзину">
@@ -216,6 +276,14 @@
           <h3 class="title title--md product__title">
             <a class="product__link" href="#">Фисташка</a>
           </h3>
+
+          <picture class="product__img">
+            <source srcset="img/products/product-2.avif, img/products/product-2@2x.avif 2x" type="image/avif">
+            <source srcset="img/products/product-2.webp, img/products/product-2@2x.webp 2x" type="image/webp">
+            <img src="img/products/product-2.jpg" srcset="img/products/product-2@2x.jpg 2x" width="168" height="168"
+              alt="Фисташковый пломбир с кусочками шоколада">
+          </picture>
+
           <p class="product__text">Фисташковый пломбир с кусочками шоколада</p>
           <p class="product__price">340 ₽/кг</p>
           <a class="product__cart" href="#" aria-label="Добавить в корзину">
@@ -229,6 +297,14 @@
           <h3 class="title title--md product__title">
             <a class="product__link" href="#">Черника</a>
           </h3>
+
+          <picture class="product__img">
+            <source srcset="img/products/product-3.avif, img/products/product-3@2x.avif 2x" type="image/avif">
+            <source srcset="img/products/product-3.webp, img/products/product-3@2x.webp 2x" type="image/webp">
+            <img src="img/products/product-3.jpg" srcset="img/products/product-3@2x.jpg 2x" width="168" height="168"
+              alt="Крем-брюле с черничным джемом">
+          </picture>
+
           <p class="product__text">Крем-брюле с черничным джемом</p>
           <p class="product__price">330 ₽/кг</p>
           <a class="product__cart" href="#" aria-label="Добавить в корзину">
@@ -242,6 +318,14 @@
           <h3 class="title title--md product__title">
             <a class="product__link" href="#">Бабл-гам</a>
           </h3>
+
+          <picture class="product__img">
+            <source srcset="img/products/product-4.avif, img/products/product-4@2x.avif 2x" type="image/avif">
+            <source srcset="img/products/product-4.webp, img/products/product-4@2x.webp 2x" type="image/webp">
+            <img src="img/products/product-4.jpg" srcset="img/products/product-4@2x.jpg 2x" width="168" height="168"
+              alt="Ванильный пломбир со сладкой посыпкой">
+          </picture>
+
           <p class="product__text">Ванильный пломбир со сладкой посыпкой</p>
           <p class="product__price">320 ₽/кг</p>
           <a class="product__cart" href="#" aria-label="Добавить в корзину">

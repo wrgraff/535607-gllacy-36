@@ -8,17 +8,20 @@
 </head>
 
 <body class="page__body">
-  <header class="header">
-    <a class="logo" href="index.html" title="Вернуться на главную">
+  <header class="page__header">
+    <a class="logo" href="index.html" title="Вернуться на Главную">
       <img class="logo__img" src="img/logo-gllacy.svg" width="137" height="56" alt="Логотип магазина Глейси">
     </a>
-
-    <nav class="header__menu">
-      <ul class="main-nav">
-        <li class="main-nav__item main-nav__item--has-dropdown">
-          <a class="main-nav__link" href="#">Каталог</a>
-
-          <ul class="dropdown">
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link">
+            <span>Каталог</span>
+            <svg class="main-nav__icon" width="16" height="16" aria-hidden="true">
+              <use href="img/stack.svg#chevron-down"></use>
+            </svg>
+          </a>
+          <ul class="dropdown__list" hidden>
             <li class="dropdown__item">
               <a class="dropdown__link" href="#">Новинки</a>
             </li>
@@ -35,7 +38,6 @@
               <a class="dropdown__link" href="#">Мелорин</a>
             </li>
           </ul>
-
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="#">Доставка и оплата</a>
@@ -44,33 +46,28 @@
           <a class="main-nav__link" href="#">О компании</a>
         </li>
       </ul>
-
-      <a class="header__tel" href="tel:+78005558628">+7 800 555-86-28</a>
-
-      <ul class="user-menu">
-        <li class="user-menu__item">
-          <a class="user-menu__link user-menu__link--search" href="#" aria-label="Поиск по сайту">
-            <svg class="user-menu__icon" width="16" height="16" aria-hidden="true">
+      <a class="main-nav__link main-nav__link--bold" href="tel:+78005558628" title="Позвоните нам">+7 800 555-86-28</a>
+      <ul class="main-nav__list main-nav__list--user-menu">
+        <li class="search main-nav__item">
+          <a class="search__link main-nav__link main-nav__link--filled" href="#" title="Поиск по сайту">
+            <svg class="main-nav__icon" width="16" height="16" aria-hidden="true">
               <use href="img/stack.svg#search"></use>
             </svg>
           </a>
-
-          <form class="search" name="search" action="https://echo.htmlacademy.ru" method="get">
+          <form class="search__form" name="search" action="https://echo.htmlacademy.ru" method="get" hidden>
             <label class="sr-only" for="search">Поиск по сайту</label>
             <input class="input search__field" id="search" type="search" name="search" placeholder="Поиск по сайту"
               required>
           </form>
-
         </li>
-        <li class="user-menu__item">
-          <a class="user-menu__link" href="#" aria-label="Личный кабинет">
-            <svg class="user-menu__icon" width="16" height="16" aria-hidden="true">
+        <li class="sign-in main-nav__item">
+          <a class="main-nav__link main-nav__link--filled" href="#" title="Личный кабинет">
+            <svg class="main-nav__icon" width="16" height="16" aria-hidden="true">
               <use href="img/stack.svg#log-in"></use>
             </svg>
             <span>Вход</span>
           </a>
-
-          <form class="sign-in" name="sign-in" action="https://echo.htmlacademy.ru" method="post">
+          <form class="sign-in__form" name="sign-in" action="https://echo.htmlacademy.ru" method="post" hidden>
             <fieldset class="sign-in__fieldset">
               <legend class="title title--md sign-in__title">Личный кабинет</legend>
               <p class="sign-in__field">
@@ -84,30 +81,24 @@
                   value="password" required>
               </p>
             </fieldset>
-
             <button class="btn btn--brand sign-in__btn" type="submit">Войти</button>
-
             <p class="sign-in__links">
               <a class="sign-in__link" href="#">Забыли пароль?</a>
               <a class="sign-in__link" href="#">Регистрация</a>
             </p>
           </form>
-
         </li>
-        <li class="user-menu__item">
-          <a class="user-menu__link" href="#" aria-label="Корзина">
-            <svg class="user-menu__icon" width="16" height="16" aria-hidden="true">
+        <li class="cart main-nav__item">
+          <a class="main-nav__link main-nav__link--filled" href="#" title="Корзина">
+            <svg class="main-nav__icon" width="16" height="16" aria-hidden="true">
               <use href="img/stack.svg#cart"></use>
             </svg>
             <span>2 товара</span>
           </a>
-
-          <div class="cart">
+          <div class="cart__inner" hidden>
             <p class="title title--md cart__title">Корзина</p>
-
             <ul class="cart__list">
               <li class="cart__item">
-
                 <picture class="cart__img">
                   <source srcset="img/products/product-1-thumb.avif, img/products/product-1-thumb@2x.avif 2x"
                     type="image/avif">
@@ -116,7 +107,6 @@
                   <img src="img/products/product-1-thumb.jpg" srcset="img/products/product-1-thumb@2x.jpg 2x" width="46"
                     height="46" alt="Сливочное мороженое с малиновым джемом">
                 </picture>
-
                 <a class="title title--xs cart__link" href="#">Малинка</a>
                 <span class="cart__text">1 кг x 310 ₽</span>
                 <span class="title title--xs cart__price">310 ₽</span>
@@ -127,7 +117,6 @@
                 </button>
               </li>
               <li class="cart__item">
-
                 <picture class="cart__img">
                   <source srcset="img/products/product-4-thumb.avif, img/products/product-4-thumb@2x.avif 2x"
                     type="image/avif">
@@ -136,7 +125,6 @@
                   <img src="img/products/product-4-thumb.jpg" srcset="img/products/product-4-thumb@2x.jpg 2x" width="46"
                     height="46" alt="Ванильный пломбир со сладкой посыпкой">
                 </picture>
-
                 <a class="title title--xs cart__link" href="#">Бабл-гам</a>
                 <span class="cart__text">1,5 кг x 320 ₽</span>
                 <span class="title title--xs cart__price">480 ₽</span>
@@ -147,7 +135,6 @@
                 </button>
               </li>
             </ul>
-
             <p class="title title--xs cart__sum">Итого: <span>790</span> ₽</p>
             <a class="btn btn--brand cart__btn" href="#">Оформить заказ</a>
           </div>
@@ -156,9 +143,8 @@
     </nav>
   </header>
 
-  <main class="page__content">
-
-    <nav class="breadcrumbs">
+  <main class="page__content page__content--catalog">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
       <ul class="breadcrumbs__list">
         <li class="breadcrumbs__item">
           <a class="breadcrumbs__link" href="index.html">Главная</a>
@@ -171,14 +157,10 @@
         </li>
       </ul>
     </nav>
-
     <h1 class="title title--lg page__title">Сливочное мороженое</h1>
-
-    <section class="filter">
+    <section class="filter" hidden>
       <h2 class="sr-only">Фильтры по категориям</h2>
-
       <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
-
         <fieldset class="filter__fieldset">
           <legend class="filter__legend">Сортировка:</legend>
           <select id="filter-sort" name="sort">
@@ -186,23 +168,19 @@
             <option value="price">по цене</option>
           </select>
         </fieldset>
-
         <fieldset class="filter__fieldset">
           <legend class="filter__subtitle">Цена:</legend>
-
           <div class="range-filter">
             <label class="sr-only" for="min-price">Минимальная цена</label>
             <input class="range-filter__field" id="min-price" type="number" name="min-price" min="0" max="5000"
               value="100">
             <span class="range-filter__sign">₽ - </span>
-
             <label class="sr-only" for="max-price">Максимальная цена</label>
             <input class="range-filter__field" id="max-price" type="number" name="max-price" min="0" max="10000"
               value="500">
             <span class="range-filter__sign">₽</span>
           </div>
         </fieldset>
-
         <fieldset class="filter__fieldset">
           <legend class="filter__legend">Жирность:</legend>
           <ul class="filter__list">
@@ -224,7 +202,6 @@
             </li>
           </ul>
         </fieldset>
-
         <fieldset class="filter__fieldset">
           <legend class="filter__legend">Наполнители:</legend>
           <ul class="filter__list">
@@ -250,27 +227,24 @@
             </li>
           </ul>
         </fieldset>
-
         <button class="btn btn--outline filter__btn" type="submit">Применить</button>
       </form>
     </section>
-
     <section class="products">
       <h2 class="sr-only">Список товаров</h2>
       <ul class="products__list">
         <li class="product">
-          <h3 class="title title--md product__title">
+          <h3 class="title title--sm product__title">
             <a class="product__link" href="#">Малинка</a>
           </h3>
-
-          <picture class="product__img">
+          <picture class="poduct__img">
             <source srcset="img/products/product-1.avif, img/products/product-1@2x.avif 2x" type="image/avif">
             <source srcset="img/products/product-1.webp, img/products/product-1@2x.webp 2x" type="image/webp">
             <img src="img/products/product-1.jpg" srcset="img/products/product-1@2x.jpg 2x" width="168" height="168"
               alt="Сливочное мороженое с малиновым джемом">
           </picture>
 
-          <p class="product__text">Сливочное мороженое с малиновым джемом</p>
+          <p class="produc__text">Сливочное мороженое с малиновым джемом</p>
           <p class="product__price">310 ₽/кг</p>
           <a class="product__cart" href="#" aria-label="Добавить в корзину">
             <svg class="product__cart-icon" width="16" height="16" aria-hidden="true">
@@ -278,19 +252,16 @@
             </svg>
           </a>
         </li>
-
         <li class="product">
-          <h3 class="title title--md product__title">
+          <h3 class="title title--sm product__title">
             <a class="product__link" href="#">Фисташка</a>
           </h3>
-
           <picture class="product__img">
             <source srcset="img/products/product-2.avif, img/products/product-2@2x.avif 2x" type="image/avif">
             <source srcset="img/products/product-2.webp, img/products/product-2@2x.webp 2x" type="image/webp">
             <img src="img/products/product-2.jpg" srcset="img/products/product-2@2x.jpg 2x" width="168" height="168"
               alt="Фисташковый пломбир с кусочками шоколада">
           </picture>
-
           <p class="product__text">Фисташковый пломбир с кусочками шоколада</p>
           <p class="product__price">340 ₽/кг</p>
           <a class="product__cart" href="#" aria-label="Добавить в корзину">
@@ -299,19 +270,16 @@
             </svg>
           </a>
         </li>
-
         <li class="product">
-          <h3 class="title title--md product__title">
+          <h3 class="title title--sm product__title">
             <a class="product__link" href="#">Черника</a>
           </h3>
-
           <picture class="product__img">
             <source srcset="img/products/product-3.avif, img/products/product-3@2x.avif 2x" type="image/avif">
             <source srcset="img/products/product-3.webp, img/products/product-3@2x.webp 2x" type="image/webp">
             <img src="img/products/product-3.jpg" srcset="img/products/product-3@2x.jpg 2x" width="168" height="168"
               alt="Крем-брюле с черничным джемом">
           </picture>
-
           <p class="product__text">Крем-брюле с черничным джемом</p>
           <p class="product__price">330 ₽/кг</p>
           <a class="product__cart" href="#" aria-label="Добавить в корзину">
@@ -320,19 +288,16 @@
             </svg>
           </a>
         </li>
-
         <li class="product">
-          <h3 class="title title--md product__title">
+          <h3 class="title title--sm product__title">
             <a class="product__link" href="#">Бабл-гам</a>
           </h3>
-
           <picture class="product__img">
             <source srcset="img/products/product-4.avif, img/products/product-4@2x.avif 2x" type="image/avif">
             <source srcset="img/products/product-4.webp, img/products/product-4@2x.webp 2x" type="image/webp">
             <img src="img/products/product-4.jpg" srcset="img/products/product-4@2x.jpg 2x" width="168" height="168"
               alt="Ванильный пломбир со сладкой посыпкой">
           </picture>
-
           <p class="product__text">Ванильный пломбир со сладкой посыпкой</p>
           <p class="product__price">320 ₽/кг</p>
           <a class="product__cart" href="#" aria-label="Добавить в корзину">
@@ -341,19 +306,16 @@
             </svg>
           </a>
         </li>
-
         <li class="product">
-          <h3 class="title title--md product__title">
+          <h3 class="title title--sm product__title">
             <a class="product__link" href="#">Ежевика</a>
           </h3>
-
           <picture class="product__img">
             <source srcset="img/products/product-5.avif, img/products/product-5@2x.avif 2x" type="image/avif">
             <source srcset="img/products/product-5.webp, img/products/product-5@2x.webp 2x" type="image/webp">
             <img src="img/products/product-5.jpg" srcset="img/products/product-5@2x.jpg 2x" width="168" height="168"
               alt="Сливочное мороженое с ежевичным джемом">
           </picture>
-
           <p class="product__text">Сливочное мороженое с ежевичным джемом</p>
           <p class="product__price">330 ₽/кг</p>
           <a class="product__cart" href="#" aria-label="Добавить в корзину">
@@ -362,19 +324,16 @@
             </svg>
           </a>
         </li>
-
         <li class="product">
-          <h3 class="title title--md product__title">
+          <h3 class="title title--sm product__title">
             <a class="product__link" href="#">Банан</a>
           </h3>
-
           <picture class="product__img">
             <source srcset="img/products/product-6.avif, img/products/product-6@2x.avif 2x" type="image/avif">
             <source srcset="img/products/product-6.webp, img/products/product-6@2x.webp 2x" type="image/webp">
             <img src="img/products/product-6.jpg" srcset="img/products/product-6@2x.jpg 2x" width="168" height="168"
               alt="Сливочный пломбир с банановым вкусом">
           </picture>
-
           <p class="product__text">Сливочный пломбир с банановым вкусом</p>
           <p class="product__price">340 ₽/кг</p>
           <a class="product__cart" href="#" aria-label="Добавить в корзину">
@@ -383,19 +342,16 @@
             </svg>
           </a>
         </li>
-
         <li class="product">
-          <h3 class="title title--md product__title">
+          <h3 class="title title--sm product__title">
             <a class="product__link" href="#">Шоколадка</a>
           </h3>
-
           <picture class="product__img">
             <source srcset="img/products/product-7.avif, img/products/product-7@2x.avif 2x" type="image/avif">
             <source srcset="img/products/product-7.webp, img/products/product-7@2x.webp 2x" type="image/webp">
             <img src="img/products/product-7.jpg" srcset="img/products/product-7@2x.jpg 2x" width="168" height="168"
               alt="Классический шоколадный пломбир">
           </picture>
-
           <p class="product__text">Классический шоколадный пломбир</p>
           <p class="product__price">270 ₽/кг</p>
           <a class="product__cart" href="#" aria-label="Добавить в корзину">
@@ -404,19 +360,16 @@
             </svg>
           </a>
         </li>
-
         <li class="product">
-          <h3 class="title title--md product__title">
+          <h3 class="title title--sm product__title">
             <a class="product__link" href="#">Клубничка</a>
           </h3>
-
           <picture class="product__img">
             <source srcset="img/products/product-8.avif, img/products/product-8@2x.avif 2x" type="image/avif">
             <source srcset="img/products/product-8.webp, img/products/product-8@2x.webp 2x" type="image/webp">
             <img src="img/products/product-8.jpg" srcset="img/products/product-8@2x.jpg 2x" width="168" height="168"
               alt="Сливочный пломбир с клубничным вкусом">
           </picture>
-
           <p class="product__text">Сливочный пломбир с клубничным вкусом</p>
           <p class="product__price">300 ₽/кг</p>
           <a class="product__cart" href="#" aria-label="Добавить в корзину">
@@ -425,19 +378,16 @@
             </svg>
           </a>
         </li>
-
         <li class="product">
-          <h3 class="title title--md product__title">
+          <h3 class="title title--sm product__title">
             <a class="product__link" href="#">Лимон</a>
           </h3>
-
           <picture class="product__img">
             <source srcset="img/products/product-9.avif, img/products/product-9@2x.avif 2x" type="image/avif">
             <source srcset="img/products/product-9.webp, img/products/product-9@2x.webp 2x" type="image/webp">
             <img src="img/products/product-9.jpg" srcset="img/products/product-9@2x.jpg 2x" width="168" height="168"
               alt="Освежающий лимонный сорбет">
           </picture>
-
           <p class="product__text">Освежающий лимонный сорбет</p>
           <p class="product__price">310 ₽/кг</p>
           <a class="product__cart" href="#" aria-label="Добавить в корзину">
@@ -446,19 +396,16 @@
             </svg>
           </a>
         </li>
-
         <li class="product">
-          <h3 class="title title--md product__title">
+          <h3 class="title title--sm product__title">
             <a class="product__link" href="#">Ментол</a>
           </h3>
-
           <picture class="product__img">
             <source srcset="img/products/product-10.avif, img/products/product-10@2x.avif 2x" type="image/avif">
             <source srcset="img/products/product-10.webp, img/products/product-10@2x.webp 2x" type="image/webp">
             <img src="img/products/product-10.jpg" srcset="img/products/product-10@2x.jpg 2x" width="168" height="168"
               alt="Сливочный пломбир с ментоловым сиропом">
           </picture>
-
           <p class="product__text">Сливочный пломбир с ментоловым сиропом</p>
           <p class="product__price">320 ₽/кг</p>
           <a class="product__cart" href="#" aria-label="Добавить в корзину">
@@ -467,19 +414,16 @@
             </svg>
           </a>
         </li>
-
         <li class="product">
-          <h3 class="title title--md product__title">
+          <h3 class="title title--sm product__title">
             <a class="product__link" href="#">Орешек</a>
           </h3>
-
           <picture class="product__img">
             <source srcset="img/products/product-11.avif, img/products/product-11@2x.avif 2x" type="image/avif">
             <source srcset="img/products/product-11.webp, img/products/product-11@2x.webp 2x" type="image/webp">
             <img src="img/products/product-11.jpg" srcset="img/products/product-1@2x.jpg 2x" width="168" height="168"
               alt="Фисташковый пломбир с шоколадным сиропом">
           </picture>
-
           <p class="product__text">Фисташковый пломбир с шоколадным сиропом</p>
           <p class="product__price">360 ₽/кг</p>
           <a class="product__cart" href="#" aria-label="Добавить в корзину">
@@ -488,19 +432,16 @@
             </svg>
           </a>
         </li>
-
         <li class="product">
-          <h3 class="title title--md product__title">
+          <h3 class="title title--sm product__title">
             <a class="product__link" href="#">Крем-брюле</a>
           </h3>
-
           <picture class="product__img">
             <source srcset="img/products/product-12.avif, img/products/product-12@2x.avif 2x" type="image/avif">
             <source srcset="img/products/product-12.webp, img/products/product-12@2x.webp 2x" type="image/webp">
             <img src="img/products/product-12.jpg" srcset="img/products/product-12@2x.jpg 2x" width="168" height="168"
               alt="Классическое крем-брюле">
           </picture>
-
           <p class="product__text">Классическое крем-брюле</p>
           <p class="product__price">280 ₽/кг</p>
           <a class="product__cart" href="#" aria-label="Добавить в корзину">
@@ -510,14 +451,12 @@
           </a>
         </li>
       </ul>
-
       <button class="btn btn--basic products__btn">Показать ещё</button>
-
-      <nav class="pagination">
+      <nav class="pagination" aria-label="Пагинация">
         <ul class="pagination__list">
           <li class="pagination__item">
-            <a class="pagination__link" aria-label="Назад">
-              <svg class="pagination__icon pagination__icon--disabled" width="16" height="16" aria-hidden="true">
+            <a class="pagination__link pagination__link--disabled" aria-label="Назад">
+              <svg class="pagination__icon" width="16" height="16" aria-hidden="true">
                 <use href="img/stack.svg#chevron-left"></use>
               </svg>
             </a>
@@ -546,64 +485,62 @@
           </li>
         </ul>
       </nav>
-
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="social">
-      <h3 class="sr-only">Мы в социальных сервисах</h3>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link" href="https://t.me/htmlacademy" aria-label="Наш канал в Telegram">
-            <svg class="social__icon" width="24" height="24" aria-hidden="true">
-              <use href="img/stack.svg#telegram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="https://vk.com/htmlacademy" aria-label="Наша группа во Vkontakte">
-            <svg class="social__icon" width="24" height="24" aria-hidden="true">
-              <use href="img/stack.svg#vk"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" aria-label="Наш канал на Youtube">
-            <svg class="social__icon" width="24" height="24" aria-hidden="true">
-              <use href="img/stack.svg#youtube"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <nav class="footer-nav">
-      <h3 class="sr-only">Навигация</h3>
+  <footer class="page__footer">
+    <ul class="social" aria-label="Мы в социальных сервисах">
+      <li class="social__item">
+        <a class="social__link" href="https://t.me/htmlacademy" target="_blank" title="Наш канал в Telegram">
+          <svg class="social__icon" width="24" height="24" aria-hidden="true">
+            <use href="img/stack.svg#telegram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="https://vk.com/htmlacademy" target="_blank" title="Наша группа во Vkontakte">
+          <svg class="social__icon" width="24" height="24" aria-hidden="true">
+            <use href="img/stack.svg#vk"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank"
+          title="Наш канал на Youtube">
+          <svg class="social__icon" width="24" height="24" aria-hidden="true">
+            <use href="img/stack.svg#youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <nav class="footer-nav" aria-label="Дополнительная навигация">
       <ul class="footer-nav__list">
         <li class="footer-nav__item">
-          <a class="footer-nav__link footer-nav__link--favorite" href="#">Для поставщиков</a>
-        </li>
-        <li class="footer-nav__item">
-          <a class="footer-nav__link" href="#">Наши документы</a>
+          <a class="footer-nav__link" href="#">
+            <svg class="footer-nav__icon" width="16" height="16" aria-hidden="true">
+              <use href="img/stack.svg#heart-fill"></use>
+            </svg>
+            <span>Для поставщиков</span>
+          </a>
         </li>
         <li class="footer-nav__item">
           <a class="footer-nav__link" href="#">О производстве</a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Наши документы</a>
         </li>
         <li class="footer-nav__item">
           <a class="footer-nav__link" href="#">Экологические стандарты</a>
         </li>
       </ul>
     </nav>
-
-    <div class="developer">
-      <h3 class="sr-only">Разработчик</h3>
-      <svg class="developer__icon" width="93" height="27" aria-label="Логотип HTML Academy">
+    <div class="developer" aria-label="Разработчик">
+      <svg class="developer__icon" width="93" height="27" aria-role="img" aria-label="Логотип HTML Academy">
         <use href="img/stack.svg#htmlacademy"></use>
       </svg>
       <address class="developer__text">
         Сделано в
-        <a class="developer__link" href="https://htmlacademy.ru">.html academy</a>
+        <a class="developer__link" href="https://htmlacademy.ru" target="_blank">.html academy</a>
         © 2023
       </address>
     </div>

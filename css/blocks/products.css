@@ -1,0 +1,17 @@
+.products__title {
+  max-width: 50%;
+  margin: 0 auto 3.5rem;
+
+  text-align: center;
+}
+
+.products__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  grid-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+}

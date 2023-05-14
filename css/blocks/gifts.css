@@ -1,0 +1,43 @@
+.gifts__title {
+  max-width: 50%;
+  margin: 0 auto 3.5rem;
+
+  text-align: center;
+}
+
+.gifts__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gifts__item {
+  display: grid;
+  padding: 2.25rem;
+
+  background-color: var(--c-special-neutral);
+  background-position: right center;
+  border-radius: 1rem;
+
+  grid-gap: 1.75rem;
+  grid-template-columns: 62%;
+}
+
+.gifts__item:first-of-type {
+  background-image: url("../../img/backgrounds/gift-1.avif");
+  background-repeat: no-repeat;
+}
+
+.gifts__item:nth-of-type(2) {
+  background-image: url("../../img/backgrounds/gift-2.avif");
+  background-repeat: no-repeat;
+}
+
+.gifts__text {
+  margin: 0;
+}

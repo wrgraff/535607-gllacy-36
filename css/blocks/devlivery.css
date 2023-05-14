@@ -1,0 +1,22 @@
+.delivery {
+  padding: 4rem;
+
+  background-image: url("../../img/backgrounds/delivery@2x.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+}
+
+.delivery__form {
+  max-width: 21.5rem;
+  padding: 2.5rem;
+
+  background-color: var(--c-basic-extra-light);
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.delivery__text {
+  font-size: 1rem;
+  line-height: 1.375rem;
+}

@@ -1,0 +1,10 @@
+.blog {
+  background-image: url("../../img/backgrounds/blog@2x.avif");
+  background-size: cover;
+}
+
+.blog__link {
+  line-height: 1.25rem;
+  color: inherit;
+  text-decoration: none;
+}

@@ -1,6 +1,6 @@
 .developer {
-  font-size: 0.75rem;
-  line-height: 1.125rem;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .developer__text {
@@ -9,9 +9,8 @@
 
 .developer__link {
   color: inherit;
-  text-decoration: none;
 
-  border-bottom: 1px solid;
+  text-underline-offset: 4px;
 }
 
 .developer__link:hover {

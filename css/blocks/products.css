@@ -1,6 +1,12 @@
+.products {
+  display: grid;
+
+  gap: 16px;
+}
+
 .products__title {
-  max-width: 50%;
-  margin: 0 auto 3.5rem;
+  max-width: 528px;
+  margin: 0 auto 40px;
 
   text-align: center;
 }
@@ -12,6 +18,20 @@
 
   list-style: none;
 
-  grid-gap: 2rem;
+  gap: 30px;
   grid-template-columns: repeat(4, 1fr);
+}
+
+.products__pagination {
+  display: grid;
+  margin-bottom: 40px;
+  padding: 40px 0;
+
+  gap: 8px 16px;
+  grid-template-columns: 168px auto 168px;
+  place-items: center;
+}
+
+.products__btn {
+  grid-column: 2 / 3;
 }

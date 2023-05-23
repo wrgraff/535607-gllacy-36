@@ -1,13 +1,13 @@
 .news {
   display: grid;
 
-  grid-gap: 2rem;
+  gap: 30px;
   grid-template-columns: repeat(2, 1fr);
 }
 
 .news__article {
-  padding: 2rem;
+  padding: 32px;
 
   background-color: var(--c-basic-extra-light);
-  border-radius: 1rem;
+  border-radius: 16px;
 }

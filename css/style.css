@@ -1,18 +1,21 @@
-
+@import "./global/box-model.css";
 @import "./global/fonts.css";
-/* @import "./global/main.css"; */
 @import "./global/variables.css";
 
-@import "./blocks/box-model.css";
 @import "./blocks/hidden.css";
 @import "./blocks/sr-only.css";
 
 @import "./blocks/page.css";
 @import "./blocks/title.css";
+@import "./blocks/btn.css";
+@import "./blocks/input.css";
+@import "./blocks/tooltip.css";
 
 @import "./blocks/logo.css";
 @import "./blocks/main-nav.css";
 @import "./blocks/search.css";
+
+@import "./blocks/carousel.css";
 
 @import "./blocks/gifts.css";
 

@@ -1,48 +1,42 @@
 .breadcrumbs {
-  padding-top: 1rem;
+  padding-top: 16px;
 
   font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .breadcrumbs__list {
-  display: inline-grid;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
   list-style: none;
 
-  grid-auto-flow: column;
-  grid-gap: 0.5rem;
+  gap: 8px 16px;
 }
 
 .breadcrumbs__item {
-  display: inline-grid;
+  display: inline-flex;
   align-items: center;
 
-  grid-auto-flow: column;
-  grid-gap: 0.5rem;
+  gap: 16px;
 }
 
 .breadcrumbs__item:not(:last-of-type)::after {
   content: "";
 
-  display: block;
-  width: 0.75rem;
-  height: 0.75rem;
+  width: 12px;
+  height: 12px;
 
-  background-image: url("../../img/stack.svg#chevrons-right");
+  background-image: url("../img/stack.svg#chevrons-right");
   background-size: cover;
 }
 
 .breadcrumbs__link {
-  padding-bottom: 0.125rem;
-
   color: inherit;
   text-decoration: none;
-
-  border-bottom: 1px solid transparent;
 }
 
 .breadcrumbs__link[href]:hover {
@@ -50,5 +44,7 @@
 }
 
 .breadcrumbs__link--current {
-  border-color: currentColor;
+  text-decoration: underline;
+
+  text-underline-offset: 4px;
 }

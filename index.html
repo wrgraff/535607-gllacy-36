@@ -13,11 +13,11 @@
       <img class="logo__img" src="img/logo-gllacy.svg" width="137" height="56" alt="Логотип магазина Глейси">
     </a>
     <nav class="main-nav" aria-label="Основная навигация">
-      <ul class="dropdown main-nav__list">
-        <li class="main-nav__item">
+      <ul class="main-nav__list">
+        <li class="dropdown main-nav__item">
           <a class="main-nav__link" href="catalog.html">
-            <span>Каталог</span>
-            <svg class="main-nav__icon" width="16" height="16" aria-hidden="true">
+            Каталог
+            <svg class="main-nav__icon" aria-hidden="true">
               <use href="img/stack.svg#chevron-down"></use>
             </svg>
           </a>
@@ -46,10 +46,12 @@
           <a class="main-nav__link" href="#">О компании</a>
         </li>
       </ul>
-      <a class="main-nav__link main-nav__link--bold" href="tel:+78005558628" title="Позвоните нам">+7 800 555-86-28</a>
+      <a class="main-nav__link main-nav__link--bold" href="tel:+78005558628" aria-label="Позвоните нам">
+        +7 800 555-86-28
+      </a>
       <ul class="main-nav__list main-nav__list--user-menu">
         <li class="search main-nav__item">
-          <a class="search__link main-nav__link main-nav__link--filled" href="#" title="Поиск по сайту">
+          <a class="search__link main-nav__link main-nav__link--filled" href="#" aria-label="Поиск по сайту">
             <svg class="main-nav__icon" width="16" height="16" aria-hidden="true">
               <use href="img/stack.svg#search"></use>
             </svg>
@@ -61,11 +63,11 @@
           </form>
         </li>
         <li class="sign-in main-nav__item">
-          <a class="main-nav__link main-nav__link--filled" href="#" title="Личный кабинет">
+          <a class="main-nav__link main-nav__link--filled" href="#" aria-label="Авторизация">
             <svg class="main-nav__icon" width="16" height="16" aria-hidden="true">
               <use href="img/stack.svg#log-in"></use>
             </svg>
-            <span>Вход</span>
+            Вход
           </a>
           <form class="sign-in__form" name="sign-in" action="https://echo.htmlacademy.ru" method="post" hidden>
             <fieldset class="sign-in__fieldset">
@@ -81,7 +83,7 @@
                   value="password" required>
               </p>
             </fieldset>
-            <button class="btn btn--brand sign-in__btn" type="submit">Войти</button>
+            <button class="btn btn--special sign-in__btn" type="submit">Войти</button>
             <p class="sign-in__links">
               <a class="sign-in__link" href="#">Забыли пароль?</a>
               <a class="sign-in__link" href="#">Регистрация</a>
@@ -89,11 +91,11 @@
           </form>
         </li>
         <li class="cart main-nav__item">
-          <a class="main-nav__link main-nav__link--filled" href="#" title="Корзина">
+          <a class="main-nav__link main-nav__link--filled" href="#" aria-label="Корзина">
             <svg class="main-nav__icon" width="16" height="16" aria-hidden="true">
               <use href="img/stack.svg#cart"></use>
             </svg>
-            <span>2 товара</span>
+            2 товара
           </a>
           <div class="cart__inner" hidden>
             <p class="title title--md cart__title">Корзина</p>
@@ -135,8 +137,8 @@
                 </button>
               </li>
             </ul>
-            <p class="title title--xs cart__sum">Итого: <span>790</span> ₽</p>
-            <a class="btn btn--brand cart__btn" href="#">Оформить заказ</a>
+            <p class="title title--xs cart__sum">Итого: 790 ₽</p>
+            <a class="btn btn--special cart__btn" href="#">Оформить заказ</a>
           </div>
         </li>
       </ul>
@@ -145,10 +147,10 @@
 
   <main class="page__content">
     <h1 class="sr-only">Магазин Глейси</h1>
-    <section class="carousel" hidden>
+    <section class="carousel">
       <h2 class="sr-only">Попробуйте все новинки</h2>
       <ul class="carousel__list">
-        <li class="carousel__item">
+        <li class="carousel__item carousel__item--current">
           <h3 class="title title--xl carousel__title">
             Нежный пломбир с клубничным джемом
           </h3>
@@ -310,6 +312,11 @@
         <ul class="advantages__list">
           <li class="advantages__item">
             <h3 class="sr-only">Собственное производство</h3>
+            <div class="advantages__marker">
+              <svg class="advantages__icon" width="24" height="24" aria-hidden="true">
+                <use href="img/stack.svg#ice-cream"></use>
+              </svg>
+            </div>
             <p class="advantages__text">
               Всё наше мороженое изготавливается на собственном производстве с
               использованием современного оборудования и проверенных временем
@@ -317,6 +324,11 @@
             </p>
           </li>
           <li class="advantages__item">
+            <div class="advantages__marker">
+              <svg class="advantages__icon" width="24" height="24" aria-hidden="true">
+                <use href="img/stack.svg#cow"></use>
+              </svg>
+            </div>
             <h3 class="sr-only">Проверенные поставщики</h3>
             <p class="advantages__text">
               Закупка ингредиентов производится только у проверенных фермерских
@@ -325,6 +337,11 @@
           </li>
           <li class="advantages__item">
             <h3 class="sr-only">Только качественные ингредиенты</h3>
+            <div class="advantages__marker">
+              <svg class="advantages__icon" width="24" height="24" aria-hidden="true">
+                <use href="img/stack.svg#leaf"></use>
+              </svg>
+            </div>
             <p class="advantages__text">
               Для приготовления мороженого используются сливки и молоко
               высочайшего качества. Все ингредиенты и добавки произведены из
@@ -333,6 +350,11 @@
           </li>
           <li class="advantages__item">
             <h3 class="sr-only">Доставка в термопаке</h3>
+            <div class="advantages__marker">
+              <svg class="advantages__icon" width="24" height="24" aria-hidden="true">
+                <use href="img/stack.svg#thermometer"></use>
+              </svg>
+            </div>
             <p class="advantages__text">
               Доставка нашего мороженого осуществляется в специальном термопаке,
               который не даёт мороженому растаять и позволяет сохранить
@@ -362,15 +384,16 @@
             <label class="sr-only" for="subscribe-email">Укажите адрес эл. почты</label>
             <input class="input subscribe__input" id="subscribe-email" name="email" type="text"
               placeholder="email@example.com" required>
-            <button class="btn btn--brand subscribe__btn" type="submit">
+            <button class="btn btn--special subscribe__btn" type="submit">
               Отправить
             </button>
           </form>
         </div>
       </article>
     </section>
+
     <section class="delivery">
-      <div class="delivery__inner">
+      <div class="delivery__content">
         <h2 class="title title--lg delivery__title">
           Доставка любимого мороженого на дом
         </h2>
@@ -379,95 +402,101 @@
           магазин? Закажите доставку мороженого на дом, и курьер привезёт вам
           ваш заказ в течение часа!
         </p>
-
-        <h3 class="sr-only">Форма доставки</h3>
-        <form class="delivery__form" name="delivery-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="delivery__text">
-            Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы
-            подтвердить заказ.
-          </p>
-          <fieldset class="delivery__fieldset">
-            <div class="delivery__field">
-              <label class="label delivery__label" for="delivery-date">Дата</label>
-              <input class="input delivery__input" id="delivery-date" name="date" type="date" value="2020-04-01"
-                required>
-              <details class="tooltip delivery__tooltip">
-                <summary class="tooltip__btn" aria-label="Подсказка">
-                  <svg class="tooltip__icon" width="16" height="16" aria-hidden="true">
-                    <use href="img/stack.svg#info"></use>
-                  </svg>
-                </summary>
-                <p class="tooltip__text">Формат даты дд.мм.гггг</p>
-              </details>
-            </div>
-            <div class="delivery__field">
-              <label class="label delivery__label" for="delivery-tel">Телефон</label>
-              <input class="input delivery__input" id="delivery-tel" name="tel" type="tel"
-                placeholder="+7 800 999-00-00" required>
-            </div>
-            <div class="delivery__field">
-              <label class="label delivery__label" for="delivery-address">Адрес</label>
-              <input class="delivery__input" id="delivery-address" name="address" type="text"
-                placeholder="ул. Большая Конюшенная, 19/8" required>
-              <details class="tooltip delivery__tooltip">
-                <summary class="tooltip__btn" aria-label="Подсказка">
-                  <svg class="tooltip__icon" width="16" height="16" aria-hidden="true">
-                    <use href="img/stack.svg#info"></use>
-                  </svg>
-                </summary>
-                <p class="tooltip__text">Укажите улицу, дом и кватиру/офис</p>
-              </details>
-            </div>
-          </fieldset>
-          <button class="btn btn--brand delivery__submit" type="submit">
-            Отправить
-          </button>
-        </form>
       </div>
+
+      <h3 class="sr-only">Форма доставки</h3>
+      <form class="delivery__form" name="delivery-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="delivery__text">
+          Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы
+          подтвердить заказ.
+        </p>
+        <fieldset class="delivery__fieldset">
+          <div class="delivery__field">
+            <label class="label delivery__label" for="delivery-date">Дата</label>
+            <input class="input delivery__input" id="delivery-date" name="date" type="date" value="2020-04-01" required>
+            <div class="tooltip delivery__tooltip">
+              <button class="tooltip__btn" aria-label="Подсказка">
+                <svg class="tooltip__icon" width="16" height="16" aria-hidden="true">
+                  <use href="img/stack.svg#info"></use>
+                </svg>
+              </button>
+              <p class="tooltip__text" hidden>Формат даты дд.мм.гггг</p>
+            </div>
+          </div>
+          <div class="delivery__field">
+            <label class="label delivery__label" for="delivery-tel">Телефон</label>
+            <input class="input delivery__input" id="delivery-tel" name="tel" type="tel" placeholder="+7 800 999-00-00"
+              required>
+          </div>
+          <div class="delivery__field delivery__field--textarea">
+            <label class="label delivery__label" for="delivery-address">Адрес</label>
+            <input class="input delivery__input" id="delivery-address" name="address" type="text"
+              placeholder="ул. Большая Конюшенная, 19/8" required>
+            <div class="tooltip delivery__tooltip">
+              <button class="tooltip__btn" aria-label="Подсказка">
+                <svg class="tooltip__icon" width="16" height="16" aria-hidden="true">
+                  <use href="img/stack.svg#info"></use>
+                </svg>
+              </button>
+              <p class="tooltip__text" hidden>Укажите улицу, дом и кватиру/офис</p>
+            </div>
+          </div>
+          </div>
+        </fieldset>
+        <button class="btn btn--special delivery__submit" type="submit">
+          Отправить
+        </button>
+      </form>
     </section>
+
     <section class="contacts">
       <h2 class="sr-only">Контакты</h2>
       <div class="contacts__inner">
         <dl class="contacts__list">
-          <dt class="contacts__title">
-            Адрес главного офиса<br>и офлайн-магазина:
-          </dt>
-          <dd class="title title--sm contacts__text">
-            наб. реки Карповки,<br>5 лит П, Санкт-Петербург
-          </dd>
-          <dt class="contacts__title">
-            Для заказов по телефону:
-          </dt>
-          <dd class="title title--sm contacts__text">
-            <a class="contacts__link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-            <small class="contacts__text-sm">(с 10 до 20 ежедневно)</small>
-          </dd>
+          <div class="contacts__item">
+            <dt class="contacts__title">
+              Адрес главного офиса<br>и офлайн-магазина:
+            </dt>
+            <dd class="title title--sm contacts__text">
+              наб. реки Карповки,<br>5 лит П, Санкт-Петербург
+            </dd>
+          </div>
+          <div class="contacts__item">
+            <dt class="contacts__title">
+              Для заказов по телефону:
+            </dt>
+            <dd class="title title--sm contacts__text">
+              <a class="contacts__link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+              <small class="contacts__text-sm">(с 10 до 20 ежедневно)</small>
+            </dd>
+          </div>
         </dl>
-        <a class="btn btn--brand contacts__btn" href="#">Форма обратной связи</a>
-        <div class="feedback" hidden>
-          <p class="title title--md feedback__title">Мы обязательно ответим вам!</p>
-          <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="feedback__fieldset">
-              <legend class="sr-only">Форма обратной связи</legend>
-              <p class="feedback__field">
-                <label class="sr-only" for="name">Имя и фамилию</label>
-                <input class="input feedback__input" id="name" type="text" name="name" placeholder="Имя и фамилия"
-                  required>
-              </p>
-              <p class="feedback__field">
-                <label class="sr-only" for="email">Электронная почта</label>
-                <input class="input feedback__input" id="email" type="email" name="email"
-                  placeholder="email@example.com" required>
-              </p>
-              <p class="feedback__field">
-                <label class="sr-only" for="message">Текст сообщения</label>
-                <textarea class="input feedback__input feedback__textarea" id="message" name="message" cols="30"
-                  rows="10" required>В свободной форме</textarea>
-              </p>
-            </fieldset>
-            <button class="btn btn--brand feedback__submit" type="submit">Отправить</button>
-          </form>
-        </div>
+        <a class="btn btn--special contacts__btn" href="#">Форма обратной связи</a>
+      </div>
+
+      <div class="feedback" hidden>
+        <p class="title title--md feedback__title">Мы обязательно ответим вам!</p>
+        <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="feedback__fieldset">
+            <legend class="sr-only">Форма обратной связи</legend>
+            <p class="feedback__field">
+              <label class="sr-only" for="name">Имя и фамилию</label>
+              <input class="input feedback__input" id="name" type="text" name="name" placeholder="Имя и фамилия"
+                required>
+            </p>
+            <p class="feedback__field">
+              <label class="sr-only" for="email">Электронная почта</label>
+              <input class="input feedback__input" id="email" type="email" name="email" placeholder="email@example.com"
+                required>
+            </p>
+            <p class="feedback__field">
+              <label class="sr-only" for="message">Текст сообщения</label>
+              <textarea class="input feedback__input feedback__textarea" id="message" name="message" cols="30" rows="10"
+                required>В свободной форме</textarea>
+            </p>
+          </fieldset>
+          <button class="btn btn--special feedback__submit" type="submit">Отправить</button>
+        </form>
       </div>
     </section>
   </main>
@@ -475,23 +504,23 @@
   <footer class="page__footer">
     <ul class="social" aria-label="Мы в социальных сервисах">
       <li class="social__item">
-        <a class="social__link" href="https://t.me/htmlacademy" target="_blank" title="Наш канал в Telegram">
-          <svg class="social__icon" width="24" height="24" aria-hidden="true">
+        <a class="social__link" href="https://t.me/htmlacademy" target="_blank" aria-label="Наш канал в Telegram">
+          <svg class="social__icon" width="16" height="16" aria-hidden="true">
             <use href="img/stack.svg#telegram"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link" href="https://vk.com/htmlacademy" target="_blank" title="Наша группа во Vkontakte">
-          <svg class="social__icon" width="24" height="24" aria-hidden="true">
+        <a class="social__link" href="https://vk.com/htmlacademy" target="_blank" aria-label="Наша группа во Vkontakte">
+          <svg class="social__icon" width="16" height="16" aria-hidden="true">
             <use href="img/stack.svg#vk"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank"
-          title="Наш канал на Youtube">
-          <svg class="social__icon" width="24" height="24" aria-hidden="true">
+          aria-label="Наш канал на Youtube">
+          <svg class="social__icon" width="16" height="16" aria-hidden="true">
             <use href="img/stack.svg#youtube"></use>
           </svg>
         </a>
@@ -500,11 +529,11 @@
     <nav class="footer-nav" aria-label="Дополнительная навигация">
       <ul class="footer-nav__list">
         <li class="footer-nav__item">
-          <a class="footer-nav__link" href="#">
+          <a class="footer-nav__link footer-nav__link--favorite" href="#">
             <svg class="footer-nav__icon" width="16" height="16" aria-hidden="true">
               <use href="img/stack.svg#heart-fill"></use>
             </svg>
-            <span>Для поставщиков</span>
+            Для поставщиков
           </a>
         </li>
         <li class="footer-nav__item">
@@ -519,7 +548,7 @@
       </ul>
     </nav>
     <div class="developer" aria-label="Разработчик">
-      <svg class="developer__icon" width="93" height="27" aria-role="img" aria-label="Логотип HTML Academy">
+      <svg class="developer__icon" width="93" height="27" role="img" aria-label="Логотип HTML Academy">
         <use href="img/stack.svg#htmlacademy"></use>
       </svg>
       <address class="developer__text">

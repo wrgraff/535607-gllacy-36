@@ -1,10 +1,21 @@
 .blog {
-  background-image: url("../../img/backgrounds/blog@2x.avif");
+  display: grid;
+  grid-template-columns: 320px;
+
+  background-image: url("../img/backgrounds/blog.avif");
   background-size: cover;
 }
 
+@media (-webkit-min-device-pixel-ratio: 2),(min-resolution:2dppx) {
+  .blog {
+    background-image: url("../img/backgrounds/blog@2x.avif");
+  }
+}
+
 .blog__link {
-  line-height: 1.25rem;
-  color: inherit;
+  order: -1;
+
+  line-height: 20px;
+  color: var(--page-text-muted);
   text-decoration: none;
 }

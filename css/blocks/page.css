@@ -2,7 +2,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, sans-serif;
 
   -webkit-font-smoothing: antialiased;
   font-synthesis: none;
@@ -17,20 +17,19 @@
   width: var(--page-width);
   min-height: 100vh;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 32px;
 
-  color: var(--page-text);
+  color: var(--page-text-dark);
 
   background-color: var(--page-bg);
 }
 
 .page__header {
   display: grid;
-  align-items: center;
-  padding: 1.5rem 0;
+  padding: 24px 0;
 
   grid-auto-flow: column;
-  grid-gap: 1rem;
+  gap: 16px;
   grid-template-columns: max-content 1fr;
 }
 
@@ -38,19 +37,20 @@
   display: grid;
   flex-grow: 1;
 
-  grid-gap: 5rem;
+  gap: 80px;
 }
 
 .page__content--catalog {
   border-bottom: 1px solid var(--c-basic-extra-light-30);
 
-  grid-gap: 1rem;
+  gap: 16px;
 }
 
 .page__footer {
-  display: grid;
+  display: flex;
   justify-content: space-between;
-  padding: 3rem 0;
+  align-items: start;
+  padding: 48px 0;
 
-  grid-auto-flow: column;
+  gap: 8px 16px;
 }

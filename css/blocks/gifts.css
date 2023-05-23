@@ -1,6 +1,6 @@
 .gifts__title {
-  max-width: 50%;
-  margin: 0 auto 3.5rem;
+  max-width: 434px;
+  margin: 0 auto 54px;
 
   text-align: center;
 }
@@ -12,32 +12,47 @@
 
   list-style: none;
 
-  grid-gap: 2rem;
+  gap: 30px;
   grid-template-columns: repeat(2, 1fr);
 }
 
 .gifts__item {
   display: grid;
-  padding: 2.25rem;
+  padding: 36px;
 
   background-color: var(--c-special-neutral);
-  background-position: right center;
-  border-radius: 1rem;
+  background-position: right bottom;
+  border-radius: 16px;
 
-  grid-gap: 1.75rem;
-  grid-template-columns: 62%;
+  gap: 28px;
+  grid-template-columns: 316px;
+  place-items: start;
 }
 
 .gifts__item:first-of-type {
-  background-image: url("../../img/backgrounds/gift-1.avif");
+  background-image: url("../img/backgrounds/gift-1.avif");
   background-repeat: no-repeat;
 }
 
 .gifts__item:nth-of-type(2) {
-  background-image: url("../../img/backgrounds/gift-2.avif");
+  background-image: url("../img/backgrounds/gift-2.avif");
   background-repeat: no-repeat;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),(min-resolution:2dppx) {
+  .gifts__item:first-of-type {
+    background-image: url("../img/backgrounds/gift-1@2x.avif");
+  }
+
+  .gifts__item:nth-of-type(2) {
+    background-image: url("../img/backgrounds/gift-2@2x.avif");
+  }
 }
 
 .gifts__text {
   margin: 0;
+}
+
+.gifts__btn {
+  align-self: end;
 }

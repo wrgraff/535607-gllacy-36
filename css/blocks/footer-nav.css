@@ -1,6 +1,6 @@
 .footer-nav {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .footer-nav__list {
@@ -10,18 +10,12 @@
 
   list-style: none;
 
-  grid-auto-flow: column;
-  grid-template-rows: repeat(2, auto);
+  gap: 8px 0;
+  grid-template-columns: repeat(2, auto);
 }
 
 .footer-nav__item {
-  padding-left: 1.5rem;
-}
-
-.footer-nav__item:first-of-type {
-  position: relative;
-
-  font-weight: 700;
+  padding-left: 24px;
 }
 
 .footer-nav__link {
@@ -31,6 +25,15 @@
 
 .footer-nav__link:hover {
   opacity: 0.6;
+}
+
+.footer-nav__link--favorite {
+  position: relative;
+
+  margin-left: -24px;
+  padding-left: 24px;
+
+  font-weight: 700;
 }
 
 .footer-nav__icon {

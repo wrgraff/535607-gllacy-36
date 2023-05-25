@@ -2,14 +2,14 @@
   padding: 24px;
 
   background-color: var(--c-basic-extra-light-30);
-  background-image: url("../img/backgrounds/advantages.avif");
+  background-image: url("../img/backgrounds/advantages.jpg");
   background-size: cover;
   border-radius: 16px;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2),(min-resolution:2dppx) {
   .advantages {
-    background-image: url("../img/backgrounds/advantages@2x.avif");
+    background-image: url("../img/backgrounds/advantages@2x.jpg");
   }
 }
 

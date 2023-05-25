@@ -2,13 +2,13 @@
   display: grid;
   grid-template-columns: 320px;
 
-  background-image: url("../img/backgrounds/blog.avif");
+  background-image: url("../img/backgrounds/blog.jpg");
   background-size: cover;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2),(min-resolution:2dppx) {
   .blog {
-    background-image: url("../img/backgrounds/blog@2x.avif");
+    background-image: url("../img/backgrounds/blog@2x.jpg");
   }
 }
 

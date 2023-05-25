@@ -32,21 +32,21 @@
 }
 
 .gifts__item--raspberry {
-  background-image: url("../img/backgrounds/gift-1.avif");
+  background-image: url("../img/backgrounds/gift-1.png");
 }
 
 .gifts__item--marshmallow {
-  background-image: url("../img/backgrounds/gift-2.avif");
+  background-image: url("../img/backgrounds/gift-2.png");
   background-repeat: no-repeat;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2),(min-resolution:2dppx) {
   .gifts__item--raspberry {
-    background-image: url("../img/backgrounds/gift-1@2x.avif");
+    background-image: url("../img/backgrounds/gift-1@2x.png");
   }
 
   .gifts__item--marshmallow {
-    background-image: url("../img/backgrounds/gift-2@2x.avif");
+    background-image: url("../img/backgrounds/gift-2@2x.png");
   }
 }
 

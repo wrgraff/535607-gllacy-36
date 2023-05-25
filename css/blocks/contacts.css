@@ -3,7 +3,7 @@
   padding: 64px;
 
   background-color: var(--c-basic-extra-light-30);
-  background-image: url("../img/backgrounds/contacts.avif");
+  background-image: url("../img/backgrounds/contacts.jpg");
   background-size: cover;
   border-radius: 16px;
 
@@ -13,7 +13,7 @@
 
 @media (-webkit-min-device-pixel-ratio: 2),(min-resolution:2dppx) {
   .contacts {
-    background-image: url("../img/backgrounds/contacts@2x.avif");
+    background-image: url("../img/backgrounds/contacts@2x.jpg");
   }
 }
 

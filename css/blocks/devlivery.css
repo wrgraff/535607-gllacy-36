@@ -5,7 +5,7 @@
   padding: 64px;
 
   background-color: var(--c-basic-extra-light-30);
-  background-image: url("../img/backgrounds/delivery.avif");
+  background-image: url("../img/backgrounds/delivery.jpg");
   background-size: cover;
   border-radius: 16px;
 
@@ -15,7 +15,7 @@
 
 @media (-webkit-min-device-pixel-ratio: 2),(min-resolution:2dppx) {
   .delivery {
-    background-image: url("../img/backgrounds/delivery@2x.avif");
+    background-image: url("../img/backgrounds/delivery@2x.jpg");
   }
 }
 

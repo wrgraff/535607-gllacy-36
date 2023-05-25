@@ -35,6 +35,21 @@
   border-radius: 50px;
 }
 
+.pagination__link--back,
+.pagination__link--forward {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px;
+}
+
+.pagination__link--back {
+  background-image: url("../img/stack.svg#chevron-left");
+}
+
+.pagination__link--forward {
+  background-image: url("../img/stack.svg#chevron-right");
+}
+
 .pagination__link--current {
   background-color: var(--c-basic-extra-light);
 }

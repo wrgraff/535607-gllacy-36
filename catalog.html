@@ -454,42 +454,36 @@
         </li>
       </ul>
 
-      <div class="products__pagination">
-        <button class="btn btn--basic products__btn">Показать ещё</button>
-        <nav class="pagination" aria-label="Пагинация">
-          <ul class="pagination__list">
-            <li class="pagination__item">
-              <a class="pagination__link pagination__link--disabled" aria-label="Назад">
-                <svg class="pagination__icon" width="16" height="16" aria-hidden="true">
-                  <use href="img/stack.svg#chevron-left"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link pagination__link--current">1</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">2</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">3</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">4</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">5</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#" aria-label="Вперёд">
-                <svg class="pagination__icon" width="16" height="16" aria-hidden="true">
-                  <use href="img/stack.svg#chevron-right"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="pagination products__pagination" aria-label="Пагинация">
+        <button class="btn btn--basic products__btn" type="button">Показать ещё</button>
+        <ul class="pagination__list">
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--back pagination__link--disabled">
+              <span class="sr-only">Назад</span>
+            </a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--current">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">4</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">5</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--forward" href="#">
+              <span class="sr-only">Вперёд</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </section>
   </main>
 

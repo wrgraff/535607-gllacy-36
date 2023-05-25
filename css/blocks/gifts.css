@@ -21,7 +21,9 @@
   padding: 36px;
 
   background-color: var(--c-special-neutral);
+  background-repeat: no-repeat;
   background-position: right bottom;
+  background-size: contain;
   border-radius: 16px;
 
   gap: 28px;
@@ -29,22 +31,21 @@
   place-items: start;
 }
 
-.gifts__item:first-of-type {
+.gifts__item--raspberry {
   background-image: url("../img/backgrounds/gift-1.avif");
-  background-repeat: no-repeat;
 }
 
-.gifts__item:nth-of-type(2) {
+.gifts__item--marshmallow {
   background-image: url("../img/backgrounds/gift-2.avif");
   background-repeat: no-repeat;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2),(min-resolution:2dppx) {
-  .gifts__item:first-of-type {
+  .gifts__item--raspberry {
     background-image: url("../img/backgrounds/gift-1@2x.avif");
   }
 
-  .gifts__item:nth-of-type(2) {
+  .gifts__item--marshmallow {
     background-image: url("../img/backgrounds/gift-2@2x.avif");
   }
 }

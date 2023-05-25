@@ -17,7 +17,7 @@
         <li class="dropdown main-nav__item">
           <a class="main-nav__link" href="catalog.html">
             Каталог
-            <svg class="main-nav__icon" aria-hidden="true">
+            <svg class="main-nav__icon" width="16" height="16" aria-hidden="true">
               <use href="img/stack.svg#chevron-down"></use>
             </svg>
           </a>
@@ -205,7 +205,7 @@
         Заказывайте мороженое и получайте подарки!
       </h2>
       <ul class="gifts__list">
-        <li class="gifts__item">
+        <li class="gifts__item gifts__item--raspberry">
           <h3 class="title title--md gifts__subtitle">Малинка даром!</h3>
           <p class="gifts__text">
             При покупке 2 кг любого фруктового мороженого добавим в ваш заказ
@@ -213,7 +213,7 @@
           </p>
           <a class="btn btn--basic gifts__btn" href="#">Хочу подарок</a>
         </li>
-        <li class="gifts__item">
+        <li class="gifts__item gifts__item--marshmallow">
           <h3 class="title title--md gifts__subtitle">Маршмеллоу даром!</h3>
           <p class="gifts__text">
             При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных
@@ -310,51 +310,31 @@
           собственного производства на развес
         </p>
         <ul class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--production">
             <h3 class="sr-only">Собственное производство</h3>
-            <div class="advantages__marker">
-              <svg class="advantages__icon" width="24" height="24" aria-hidden="true">
-                <use href="img/stack.svg#ice-cream"></use>
-              </svg>
-            </div>
             <p class="advantages__text">
               Всё наше мороженое изготавливается на собственном производстве с
               использованием современного оборудования и проверенных временем
               технологий.
             </p>
           </li>
-          <li class="advantages__item">
-            <div class="advantages__marker">
-              <svg class="advantages__icon" width="24" height="24" aria-hidden="true">
-                <use href="img/stack.svg#cow"></use>
-              </svg>
-            </div>
+          <li class="advantages__item advantages__item--suppliers">
             <h3 class="sr-only">Проверенные поставщики</h3>
             <p class="advantages__text">
               Закупка ингредиентов производится только у проверенных фермерских
               хозяйств, с которыми нас связывает долговременное сотрудничество.
             </p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--ingredients">
             <h3 class="sr-only">Только качественные ингредиенты</h3>
-            <div class="advantages__marker">
-              <svg class="advantages__icon" width="24" height="24" aria-hidden="true">
-                <use href="img/stack.svg#leaf"></use>
-              </svg>
-            </div>
             <p class="advantages__text">
               Для приготовления мороженого используются сливки и молоко
               высочайшего качества. Все ингредиенты и добавки произведены из
               натурального сырья.
             </p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--thermopack">
             <h3 class="sr-only">Доставка в термопаке</h3>
-            <div class="advantages__marker">
-              <svg class="advantages__icon" width="24" height="24" aria-hidden="true">
-                <use href="img/stack.svg#thermometer"></use>
-              </svg>
-            </div>
             <p class="advantages__text">
               Доставка нашего мороженого осуществляется в специальном термопаке,
               который не даёт мороженому растаять и позволяет сохранить
@@ -415,7 +395,7 @@
             <label class="label delivery__label" for="delivery-date">Дата</label>
             <input class="input delivery__input" id="delivery-date" name="date" type="date" value="2020-04-01" required>
             <div class="tooltip delivery__tooltip">
-              <button class="tooltip__btn" aria-label="Подсказка">
+              <button class="tooltip__btn" type="button" aria-label="Подсказка">
                 <svg class="tooltip__icon" width="16" height="16" aria-hidden="true">
                   <use href="img/stack.svg#info"></use>
                 </svg>
@@ -433,7 +413,7 @@
             <input class="input delivery__input" id="delivery-address" name="address" type="text"
               placeholder="ул. Большая Конюшенная, 19/8" required>
             <div class="tooltip delivery__tooltip">
-              <button class="tooltip__btn" aria-label="Подсказка">
+              <button class="tooltip__btn" type="button" aria-label="Подсказка">
                 <svg class="tooltip__icon" width="16" height="16" aria-hidden="true">
                   <use href="img/stack.svg#info"></use>
                 </svg>
@@ -453,50 +433,22 @@
       <h2 class="sr-only">Контакты</h2>
       <div class="contacts__inner">
         <dl class="contacts__list">
-          <div class="contacts__item">
-            <dt class="contacts__title">
-              Адрес главного офиса<br>и офлайн-магазина:
-            </dt>
-            <dd class="title title--sm contacts__text">
-              наб. реки Карповки,<br>5 лит П, Санкт-Петербург
-            </dd>
-          </div>
-          <div class="contacts__item">
-            <dt class="contacts__title">
-              Для заказов по телефону:
-            </dt>
-            <dd class="title title--sm contacts__text">
-              <a class="contacts__link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-              <small class="contacts__text-sm">(с 10 до 20 ежедневно)</small>
-            </dd>
-          </div>
+          <dt class="contacts__title">
+            Адрес главного офиса<br>и офлайн-магазина:
+          </dt>
+          <dd class="title title--sm contacts__text">
+            наб. реки Карповки,<br>5 лит П, Санкт-Петербург
+          </dd>
+          <dt class="contacts__title">
+            Для заказов по телефону:
+          </dt>
+          <dd class="title title--sm contacts__text">
+            <a class="contacts__link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            <br>
+            <small class="contacts__text-sm">(с 10 до 20 ежедневно)</small>
+          </dd>
         </dl>
         <a class="btn btn--special contacts__btn" href="#">Форма обратной связи</a>
-      </div>
-
-      <div class="feedback" hidden>
-        <p class="title title--md feedback__title">Мы обязательно ответим вам!</p>
-        <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="feedback__fieldset">
-            <legend class="sr-only">Форма обратной связи</legend>
-            <p class="feedback__field">
-              <label class="sr-only" for="name">Имя и фамилию</label>
-              <input class="input feedback__input" id="name" type="text" name="name" placeholder="Имя и фамилия"
-                required>
-            </p>
-            <p class="feedback__field">
-              <label class="sr-only" for="email">Электронная почта</label>
-              <input class="input feedback__input" id="email" type="email" name="email" placeholder="email@example.com"
-                required>
-            </p>
-            <p class="feedback__field">
-              <label class="sr-only" for="message">Текст сообщения</label>
-              <textarea class="input feedback__input feedback__textarea" id="message" name="message" cols="30" rows="10"
-                required>В свободной форме</textarea>
-            </p>
-          </fieldset>
-          <button class="btn btn--special feedback__submit" type="submit">Отправить</button>
-        </form>
       </div>
     </section>
   </main>
@@ -558,6 +510,31 @@
       </address>
     </div>
   </footer>
+
+  <div class="feedback" hidden>
+    <p class="title title--md feedback__title">Мы обязательно ответим вам!</p>
+    <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="feedback__fieldset">
+        <legend class="sr-only">Форма обратной связи</legend>
+        <p class="feedback__field">
+          <label class="sr-only" for="name">Имя и фамилию</label>
+          <input class="input feedback__input" id="name" type="text" name="name" placeholder="Имя и фамилия"
+            required>
+        </p>
+        <p class="feedback__field">
+          <label class="sr-only" for="email">Электронная почта</label>
+          <input class="input feedback__input" id="email" type="email" name="email" placeholder="email@example.com"
+            required>
+        </p>
+        <p class="feedback__field">
+          <label class="sr-only" for="message">Текст сообщения</label>
+          <textarea class="input feedback__input feedback__textarea" id="message" name="message" cols="30" rows="10"
+            required>В свободной форме</textarea>
+        </p>
+      </fieldset>
+      <button class="btn btn--special feedback__submit" type="submit">Отправить</button>
+    </form>
+  </div>
 </body>
 
 </html>

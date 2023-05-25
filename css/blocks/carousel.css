@@ -37,7 +37,7 @@
   content: "";
   position: absolute;
   top: 50%;
-  right: 50%;
+  left: 50%;
   z-index: -1;
 
   width: 312px;
@@ -45,5 +45,5 @@
 
   background-color: var(--c-basic-extra-light-30);
   border-radius: 50%;
-  transform: translate(50%, -50%);
+  transform: translate(-50%, -50%);
 }

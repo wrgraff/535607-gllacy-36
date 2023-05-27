@@ -1,0 +1,50 @@
+.breadcrumbs {
+  padding-top: 16px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  gap: 8px 16px;
+}
+
+.breadcrumbs__item {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 16px;
+}
+
+.breadcrumbs__item:not(:last-of-type)::after {
+  content: "";
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url("../img/stack.svg#chevrons-right");
+  background-size: cover;
+}
+
+.breadcrumbs__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.breadcrumbs__link[href]:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs__link--current {
+  text-decoration: underline;
+
+  text-underline-offset: 4px;
+}

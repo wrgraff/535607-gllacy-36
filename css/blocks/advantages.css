@@ -1,0 +1,78 @@
+.advantages {
+  padding: 24px;
+
+  background-color: var(--c-basic-extra-light-30);
+  background-image: url("../img/backgrounds/advantages.jpg");
+  background-size: cover;
+  border-radius: 16px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),(min-resolution:2dppx) {
+  .advantages {
+    background-image: url("../img/backgrounds/advantages@2x.jpg");
+  }
+}
+
+.advantages__inner {
+  padding: 40px;
+
+  background-color: var(--c-basic-extra-light);
+  border-radius: 16px;
+}
+
+.advantages__title {
+  margin-bottom: 56px;
+
+  text-align: center;
+}
+
+.advantages__list {
+  display: grid;
+  margin: 0 0 16px;
+  padding: 0;
+
+  list-style: none;
+
+  gap: 40px 32px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.advantages__item {
+  display: flex;
+
+  gap: 16px;
+}
+
+.advantages__item::before {
+  content: "";
+
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 32px 32px;
+  border: 2px solid;
+  border-radius: 50%;
+}
+
+.advantages__item--production::before {
+  background-image: url("../img/stack.svg#ice-cream");
+}
+
+.advantages__item--suppliers::before {
+  background-image: url("../img/stack.svg#cow");
+}
+
+.advantages__item--ingredients::before {
+  background-image: url("../img/stack.svg#leaf");
+}
+
+.advantages__item--thermopack::before {
+  background-image: url("../img/stack.svg#thermometer");
+}
+
+.advantages__text {
+  margin: 0;
+}

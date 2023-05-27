@@ -1,0 +1,29 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 32px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+
+  border: none;
+  border-radius: 50px;
+}
+
+.btn--basic {
+  color: var(--c-basic-extra-dark);
+
+  background-color: var(--c-basic-extra-light);
+  box-shadow: 0 0 0 4px var(--c-basic-extra-light-40);
+}
+
+.btn--special {
+  color: var(--page-text-light);
+
+  background-color: var(--c-special-extra-bright);
+  box-shadow: 0 0 0 4px var(--c-special-extra-bright-30);
+}

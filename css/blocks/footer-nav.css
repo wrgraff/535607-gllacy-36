@@ -1,0 +1,45 @@
+.footer-nav {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-nav__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  gap: 8px 0;
+  grid-template-columns: repeat(2, auto);
+}
+
+.footer-nav__item {
+  padding-left: 24px;
+}
+
+.footer-nav__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-nav__link:hover {
+  opacity: 0.6;
+}
+
+.footer-nav__link--favorite {
+  position: relative;
+
+  margin-left: -24px;
+  padding-left: 24px;
+
+  font-weight: 700;
+}
+
+.footer-nav__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  fill: currentColor;
+}

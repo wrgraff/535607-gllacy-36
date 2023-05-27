@@ -1,0 +1,27 @@
+.social {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  gap: 8px 16px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+
+  background-color: var(--c-basic-extra-light);
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--c-basic-extra-light-30);
+}
+
+.social__icon {
+  width: 16px;
+  height: 16px;
+
+  fill: var(--page-bg);
+}

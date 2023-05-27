@@ -1,0 +1,21 @@
+.blog {
+  display: grid;
+  grid-template-columns: 320px;
+
+  background-image: url("../img/backgrounds/blog.jpg");
+  background-size: cover;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),(min-resolution:2dppx) {
+  .blog {
+    background-image: url("../img/backgrounds/blog@2x.jpg");
+  }
+}
+
+.blog__link {
+  order: -1;
+
+  line-height: 20px;
+  color: var(--page-text-muted);
+  text-decoration: none;
+}

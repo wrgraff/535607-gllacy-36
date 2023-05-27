@@ -1,0 +1,18 @@
+.developer {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.developer__text {
+  font-style: normal;
+}
+
+.developer__link {
+  color: inherit;
+
+  text-underline-offset: 4px;
+}
+
+.developer__link:hover {
+  opacity: 0.6;
+}
